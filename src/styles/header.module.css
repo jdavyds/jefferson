@@ -1,0 +1,54 @@
+.sticky {
+    position: sticky;
+    top: 0;
+    background: white;
+    z-index: 999999999;
+}
+.prehead {
+    padding: 5px 0;
+    font-size: 16px;
+    background: rgb(237, 237, 237);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.prehead span {
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+    opacity: 0.6;
+}
+.prehead span img {
+    margin-right: 5px;
+}
+.main_head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    box-shadow: 0 5px 5px 0px rgb(230, 225, 225);
+}
+.main_head img {
+    height: 50px;
+}
+.main_head nav {
+    width: 75%;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 18px;
+}
+.main_head a {
+    color: rgb(49, 52, 53);
+    text-decoration: none;
+}
+.main_head button {
+    background: rgb(248, 169, 17);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    height: 45px;
+    width: fit-content;
+    font-size: 16px;
+    padding: 0 10px;
+    cursor: pointer;
+}
