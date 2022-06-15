@@ -96,7 +96,7 @@ export default function Home() {
             Lorepsum Lorepsum
           </p>
           <nav>
-            <button className={style.hero_btn}>Get a Consultant</button>
+            <button className={style.hero_btn}>Request Consultant</button>
             <button className={style.hero_vid}>
               <img src={vid} alt="" /> Watch Video
             </button>

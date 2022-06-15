@@ -103,13 +103,16 @@
         font-size: 14px;
         background: rgb(237, 237, 237);
         display: flex;
-        justify-content: space-between;
-        padding: 10px;
+        padding: 10px 5px;
     }
     .hamHead nav:first-of-type span {
         display: flex;
         align-items: center;
         opacity: 0.6;
+        margin: 0 5px;
+    }
+    .hamHead nav:first-of-type span:first-of-type {
+        margin-right: auto;
     }
     .hamHead nav:first-of-type span img {
         margin-right: 5px;
