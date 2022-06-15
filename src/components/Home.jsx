@@ -1,18 +1,15 @@
-import React from 'react'
+import React, {useState} from 'react'
 import style from './../styles/home.module.css'
 import Header from './Header'
 import Footer from './Footer'
-import hero1 from './../assets/Frame 6.png'
-import hero2 from './../assets/Frame 4.png'
-import hero3 from './../assets/Frame 12.png'
+import hero from './../assets/homebg.png'
 import vid from './../assets/Group 2.png'
 import partner1 from './../assets/download 2.png'
 import partner2 from './../assets/images (35) 1.png'
 import partner3 from './../assets/images (36).png'
 import partner4 from './../assets/images (7).png'
 import partner5 from './../assets/images (9).png'
-import abt1 from './../assets/cheerful-woman-using-laptop-smartphone 1.png'
-import abt2 from './../assets/Polygon 5.png'
+import abt from './../assets/know.png'
 import exp from './../assets/export.png'
 import icon1 from './../assets/icon1.png'
 import icon2 from './../assets/icon2.png'
@@ -27,6 +24,7 @@ import success2 from "./../assets/success2.png";
 import success3 from "./../assets/success3.png";
 import success4 from "./../assets/success4.png";
 import arrow from './../assets/Vector.png'
+import invert from './../assets/invert.png'
 import stars from './../assets/stars.png'
 import project1 from './../assets/gallery1.png'
 import project2 from "./../assets/gallery2.png";
@@ -36,14 +34,58 @@ import feedback from './../assets/feedback1.png'
 import { Link } from "react-router-dom";
 
 export default function Home() {
+  const [one, setOne] = useState(true);
+  const [two, setTwo] = useState(false);
+  const [three, setThree] = useState(false);
+  const [four, setFour] = useState(false);
+
+
+  function handleOne() {
+    if(one === true) {
+      setOne(false);
+    } else {
+      setOne(true);
+      setTwo(false);
+      setThree(false);
+      setFour(false);
+    }
+  }
+  function handleTwo() {
+    if(two === true) {
+      setTwo(false);
+    } else {
+      setTwo(true);
+      setOne(false);
+      setThree(false);
+      setFour(false);
+    }
+  }
+  function handleThree() {
+    if(three === true) {
+      setThree(false);
+    } else {
+      setThree(true);
+      setOne(false);
+      setTwo(false);
+      setFour(false);
+    }
+  }
+  function handleFour() {
+    if(four === true) {
+      setFour(false);
+    } else {
+      setFour(true);
+      setOne(false);
+      setTwo(false);
+      setThree(false);
+    }
+  }
   return (
     <main>
       <Header />
       <section className={style.hero}>
         <div className={style.hero_left}>
-          <img src={hero2} alt="" className={style.big} />
-          <img src={hero1} alt="" className={style.med} />
-          <img src={hero3} alt="" className={style.small} />
+          <img src={hero} alt="" className={style.big} />
         </div>
         <div className={style.hero_right}>
           <h2>
@@ -74,11 +116,8 @@ export default function Home() {
       <section className={style.about}>
         <h2>GET TO KNOW WHAT WE DO</h2>
         <div className={style.abt}>
-          <div className={style.abt_imgs}>
-            <figure>
-              <img src={abt1} alt="" />
-            </figure>
-            <img src={abt2} alt="" className={style.kite} />
+          <div className={style.abt_img}>
+            <img src={abt} alt="" />
           </div>
           <div className={style.abt_info}>
             <p>
@@ -199,47 +238,107 @@ export default function Home() {
         <h2>OUR SUCCESS STORIES</h2>
         <div>
           <div className={style.projects}>
-            <nav>
+            <nav onClick={handleOne}>
               <img src={success1} alt="" />
               <span>
                 <b>Temple Grill</b>
                 <img src={stars} alt="" />
               </span>
-              <img src={arrow} alt="" />
+              <img src={one ? invert : arrow} alt="" />
             </nav>
-            <nav>
+            <p className={one ? style.show : ""}>
+              Temple Grill is a progressive and innovative hospitality
+              investment, management and development company
+            </p>
+            <figure className={one ? style.resShow : style.resHide}>
+              <img src={project1} alt="" />
+              <img src={project2} alt="" />
+              <img src={project3} alt="" />
+              <img src={project4} alt="" />
+            </figure>
+            <nav onClick={handleTwo}>
               <img src={success2} alt="" />
               <span>
                 <b>SOHO bar and Resturant</b>
                 <img src={stars} alt="" />
               </span>
-              <img src={arrow} alt="" />
+              <img src={two ? invert : arrow} alt="" />
             </nav>
-            <nav>
+            <p className={two ? style.show : ""}>
+              Soho is a progressive and innovative hospitality investment,
+              management and development company
+            </p>
+            <figure className={two ? style.resShow : style.resHide}>
+              <img src={project2} alt="" />
+              <img src={project3} alt="" />
+              <img src={project4} alt="" />
+              <img src={project1} alt="" />
+            </figure>
+            <nav onClick={handleThree}>
               <img src={success3} alt="" />
               <span>
                 <b>Redson Bet</b>
                 <img src={stars} alt="" />
               </span>
-              <img src={arrow} alt="" />
+              <img src={three ? invert : arrow} alt="" />
             </nav>
-            <nav>
+            <p className={three ? style.show : ""}>
+              Redson is a progressive and innovative hospitality investment,
+              management and development company
+            </p>
+            <figure className={three ? style.resShow : style.resHide}>
+              <img src={project3} alt="" />
+              <img src={project4} alt="" />
+              <img src={project1} alt="" />
+              <img src={project2} alt="" />
+            </figure>
+            <nav onClick={handleFour}>
               <img src={success4} alt="" />
               <span>
                 <b>Mayfair Design Studio</b>
                 <img src={stars} alt="" />
               </span>
-              <img src={arrow} alt="" />
+              <img src={four ? invert : arrow} alt="" />
             </nav>
+            <p className={four ? style.show : ""}>
+              Mayfair is a progressive and innovative hospitality investment,
+              management and development company
+            </p>
+            <figure className={four ? style.resShow : style.resHide}>
+              <img src={project4} alt="" />
+              <img src={project3} alt="" />
+              <img src={project2} alt="" />
+              <img src={project1} alt="" />
+            </figure>
             <button>
               See more projects <img src={exp} alt="" />
             </button>
           </div>
-          <figure>
-            <img src={project1} alt="" />
-            <img src={project2} alt="" />
-            <img src={project3} alt="" />
-            <img src={project4} alt="" />
+          <figure className={style.projMain}>
+            <img
+              src={
+                one ? project1 : two ? project2 : three ? project3 : project4
+              }
+              alt=""
+            />
+            <img
+              src={
+                one ? project2 : two ? project3 : three ? project4 : project1
+              }
+              alt=""
+            />
+            <img
+              src={
+                one ? project3 : two ? project4 : three ? project1 : project2
+              }
+              alt=""
+            />
+            <img
+              src={
+                one ? project4 : two ? project1 : three ? project2 : project3
+              }
+              alt=""
+            />
           </figure>
         </div>
       </section>

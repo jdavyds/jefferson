@@ -6,7 +6,7 @@
 }
 .prehead {
     padding: 5px 0;
-    font-size: 16px;
+    font-size: 15px;
     background: rgb(237, 237, 237);
     display: flex;
     justify-content: flex-end;
@@ -28,16 +28,17 @@
     padding: 20px;
     box-shadow: 0 5px 5px 0px rgb(230, 225, 225);
 }
-.main_head img {
+.logo {
     height: 50px;
 }
 .main_head nav {
-    width: 75%;
+    width: 70%;
     display: flex;
-    justify-content: space-evenly;
-    font-size: 18px;
+    justify-content: center;
+    font-size: 16px;
 }
 .main_head a {
+    margin: 0 20px;
     color: rgb(49, 52, 53);
     text-decoration: none;
 }
@@ -51,4 +52,100 @@
     font-size: 16px;
     padding: 0 10px;
     cursor: pointer;
+}
+.ham {
+    display: none;
+}
+.hideHam {
+    display: none;
+}
+@media only screen and (max-width: 800px) { 
+    .sticky {
+    position: sticky;
+    top: 0;
+    background: white;
+    z-index: 999999999;
+    }
+    .prehead {
+        display: none;
+    }
+    .main_head {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+    }
+    .logo {
+        height: 30px;
+    }
+    .main_head nav {
+        display: none;
+    }
+    .main_head button {
+        display: none;
+    }
+    .ham {
+        display: block;
+    }
+    .hideHam {
+        display: none;
+    }
+    .hamHead {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100vh;
+        background: white;
+        display: flex;
+        flex-direction: column;
+    }
+    .hamHead nav:first-of-type {
+        font-size: 14px;
+        background: rgb(237, 237, 237);
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+    }
+    .hamHead nav:first-of-type span {
+        display: flex;
+        align-items: center;
+        opacity: 0.6;
+    }
+    .hamHead nav:first-of-type span img {
+        margin-right: 5px;
+        height: 15px;
+    }
+    .hamNav {
+        height: 100%;
+        padding: 0 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;    
+    }
+    .hamNav a {
+        color: rgb(49, 52, 53);
+        text-decoration: none;
+    }
+    .hamNav button {
+        background: rgb(248, 169, 17);
+        color: white;
+        border: none;
+        border-radius: 10px;
+        height: 45px;
+        width: fit-content;
+        font-size: 16px;
+        padding: 0 10px;
+        cursor: pointer;
+    }
+    .hamNav div {
+        height: 30px;
+        width: 30px;
+        margin: 0 auto;
+        padding: 30px;
+        background: gainsboro;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 100%;
+    }
 }

@@ -3,44 +3,22 @@
     grid-template-columns: 45% 55%;
 }
 .hero_left {
-    height: 470px;
-    position: relative;
+    height: 500px;
+    padding: 40px 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-position:
-    top 30px right 25%,
-    bottom 90px left 15%,
-    bottom 50px right 30%;
-    background-image:
-    url(./../assets/herobg2.png),
-    url(./../assets/herobg3.png),
-    url(./../assets/herobg1.png);
-    background-size: 30px, 30px, 30px;
-    background-repeat: no-repeat;
 }
-.hero_left .big {
-    height: 80%;
-    position: absolute;
-    left: 20%;
-}
-.hero_left .med {
-    height: 55%;
-    position: absolute;
-    right: 26%;
-    bottom: 16%;
-}
-.hero_left .small {
-    position: absolute;
-    right: 25px;
-    top: 18%;
+.hero_left img {
+    height: 100%;
 }
 .hero_right {
     background: rgb(49, 52, 53);
     color: white;
     display: flex;
     flex-direction: column;
-    padding: 50px 80px 50px 50px;
+    justify-content: center;
+    padding: 0 80px 0 50px;
 }
 .hero_right h2 {
     font-size: 55px;
@@ -52,6 +30,9 @@
 .hero_right p {
     font-size: 18px;
     margin: 20px 0;
+    line-height: 1.6;
+    word-break: break-all;
+    width: 80%;
 }
 .hero_right nav {
     margin: 10px 0;
@@ -84,6 +65,43 @@
     height: 30px;
     margin: 0 10px ;
 }
+@media only screen and (max-width: 800px) { 
+.hero {
+    display: flex;
+    flex-direction: column-reverse;
+}
+.hero_left {
+    height: 350px;
+    padding: 10px;
+}
+.hero_left img {
+    height: 100%;
+    width: 100%;
+}
+.hero_right {
+    padding: 15px;
+}
+.hero_right h2 {
+    font-size: 40px;
+}
+.hero_right p {
+    font-size: 16px;
+    width: 100%;
+}
+.hero_btn {
+    height: 40px;
+    width: fit-content;
+    padding: 0 10px;
+    font-size: 14px;
+}
+.hero_vid {
+    font-size: 14px;
+}
+.hero_vid img {
+    height: 25px;
+    margin: 0 5px ;
+}
+}
 .partners {
     display: flex;
     flex-direction: column;
@@ -115,32 +133,20 @@
 .abt {
     margin: 30px 0;
     padding: 0 150px;
-    height: 400px;
+    height: 450px;
     display: grid;
     grid-template-columns: 40% 60%;
 }
-.abt_imgs {
-    height: 400px;
+.abt_img {
+    height: 450px;
     width: 100%;
-    position: relative;
 }
-.abt_imgs figure {
+.abt_img img {
     width: 100%;
-    height: 400px;
-}
-.abt_imgs figure img {
-    width: 100%;
-    height: 100%;
-}
-.kite {
-    width: 70px;
-    height: 70px;
-    position: absolute;
-    left: 50%;
-    bottom: 0;
-    transform: translate(-50%, 50%);
+    height: calc(100% + 40px);
 }
 .abt_info {
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -177,6 +183,79 @@
 .abt_info nav b {
     font-size: 30px;
     color: white;
+}
+@media only screen and (max-width: 800px) { 
+.partners {
+    padding: 15px;
+}
+.partners small {
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
+}
+.partners figure {
+    padding: 15px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.partners figure img {
+    width: 40%;
+    margin: 10px;
+}
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.about h2 {
+    font-size: 18px;
+    padding: 10px;
+    border-bottom: 2px solid;
+}
+.abt {
+    margin: 30px 0;
+    padding: 0;
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.abt_img {
+    height: 100%;
+    width: 100%;
+    padding: 15px;
+}
+.abt_img img {
+    width: 100%;
+    height: 100%;
+}
+.abt_info p {
+    padding: 15px;
+    line-height: 1.6;
+    font-size: 16px;
+}
+.abt_info a {
+    font-weight: 400;
+    margin: 20px 15px;
+    font-size: 16px;
+    width: fit-content;
+}
+.abt_info a img {
+    width: 15px;
+    height: 15px;
+}
+.abt_info nav {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.abt_info nav span {
+    padding: 15px;
+    font-size: 14px;
+    line-height: 1.3;
+}
+.abt_info nav b {
+    font-size: 20px;
+}
 }
 .expertise {
     margin-top: 40px;
@@ -241,6 +320,60 @@
     margin: 0 10px;
     height: 18px;
 }
+@media only screen and (max-width: 800px) { 
+.expertise {
+    margin-top: 0;
+}
+.expertise h2 {
+    font-size: 18px;
+    padding: 10px 0;
+    border-bottom: 2px solid;
+    width: 85%;
+    line-height: 1.5;
+    text-align: center;
+}
+.expertise div {
+    padding: 15px;
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.expertise div nav {
+    margin: 10px;
+    padding: 15px;
+    height: fit-content;
+    width: 100%;
+    line-height: 1.6;
+}
+.expertise div nav figure {
+    height: 50px;
+    width: 50px;
+}
+.expertise div nav img {
+    height: 25px;
+    width: 25px;
+}
+.expertise nav h4 {
+    font-size: 16px;
+    font-weight: 300;
+}
+.expertise nav p {
+    margin: 10px 0;
+    font-size: 14px;
+}
+.expertise button {
+    border-radius: 20px;
+    padding: 15px;
+    margin: 20px 0;
+    font-size: 16px;
+}
+.expertise button img {
+    height: 16px;
+}
+}
 .success {
     display: flex;
     flex-direction: column;
@@ -287,6 +420,16 @@
     margin: 10px 0;
     opacity: 0.6;
 }
+.projects p {
+    display: none;
+}
+.projects p.show {
+    display: block;
+    width: 80%;
+    padding: 10px 0;
+    line-height: 1.6;
+    opacity: 0.6;
+}
 .projects button {
     background: inherit;
     border-radius: 20px;
@@ -303,9 +446,75 @@
     margin: 0 10px;
     height: 18px;
 }
-.success figure img {
-    width: 50%;
+.success .projMain img {
+    width: 45%;
     height: 250px;
+    margin: 10px;
+}
+.resHide, .resShow {
+    display: none;
+}
+@media only screen and (max-width: 800px) { 
+.success {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.success h2 {
+    font-size: 18px;
+    padding: 10px 0;
+    margin-top: 20px;
+    border-bottom: 2px solid;
+    width: 60%;
+    line-height: 1.5;
+    text-align: center;
+}
+.success > div {
+    padding: 15px;
+    margin: 50px 0;
+    display: flex;
+    flex-direction: column;
+}
+.projects nav {
+    width: 100%;
+    height: 70px;
+}
+.projects nav > img:first-of-type {
+    height: 80%;
+}
+.projects nav > img:last-of-type {
+    height: 7px;
+}
+.projects nav span b {
+    margin: 5px 0;
+    font-size: 15px;
+}
+.projects p {
+    display: none;
+}
+.projects p.show {
+    display: none;
+}
+.projects button {
+    display: none;
+}
+.projMain {
+    display: none;
+}
+.resShow {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.resShow img {
+    width: 49%;
+    height: 50vw;
+    margin: 5px 0;
+}
+.resHide {
+    display: none
+}
 }
 .feedbacks {
     display: flex;
@@ -357,6 +566,28 @@
     font-size: 16px;
     opacity: 0.6;
 }
+@media only screen and (max-width: 800px) { 
+.feedbacks h2 {
+    font-size: 18px;
+    padding: 10px 0;
+    border-bottom: 2px solid;
+    width: 85%;
+    line-height: 1.5;
+    text-align: center;
+}
+.feedback {
+    margin: 30px 0;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+}
+.feedback span img {
+    height: 15px;
+}
+.feedback nav p {
+    font-size: 14px;
+}   
+}
 .subscribe {
     display: flex;
     flex-direction: column;
@@ -393,4 +624,32 @@
     display: flex;
     align-items: center;
     justify-content: center;
+}
+@media only screen and (max-width: 800px) { 
+.subscribe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+}
+.subscribe h2 {
+    font-size: 18px;
+    padding: 10px 0;
+    border-bottom: 2px solid;
+    width: 60%;
+    line-height: 1.5;
+    text-align: center;
+}
+.subscribe label {
+    width: 100%;
+}
+.subscribe input {
+    width: 100%;
+    font-size: 14px;
+}
+.subscribe button {
+    width: fit-content;
+    padding: 0 10px;
+    font-size: 14px; 
+}
 }

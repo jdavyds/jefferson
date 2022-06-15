@@ -2,6 +2,10 @@ import React from 'react'
 import style from './../styles/footer.module.css'
 import logo from "./../assets/Jefferson  logo.png";
 import seal from './../assets/seal.png'
+import partner1 from './../assets/download 2.png'
+import partner2 from "./../assets/images (35) 1.png";
+import partner3 from "./../assets/images (7).png";
+import partner4 from "./../assets/images (9).png";
 import fb from './../assets/facebook.svg'
 import twitter from './../assets/twitter.svg'
 import ig from './../assets/instagram.svg'
@@ -12,7 +16,7 @@ export default function Footer() {
     <footer className={style.footer}>
       <main>
         <div className={style.footer_abt}>
-          <Link to='/'>
+          <Link to="/">
             <img src={logo} alt="" />
           </Link>
           <p>
@@ -81,8 +85,14 @@ export default function Footer() {
           <Link to="/">NDPR Agreement</Link>
         </nav>
         <div>
+          <nav className={style.partners}>
+            <img src={partner1} alt="" />
+            <img src={partner2} alt="" />
+            <img src={partner3} alt="" />
+            <img src={partner4} alt="" />
+          </nav>
           <span>© 2022 Jefferson Hospitality Inc. | All rights reserved.</span>
-          <nav>
+          <nav className={style.socials}>
             <img src={fb} alt="" />
             <img src={twitter} alt="" />
             <img src={ig} alt="" />
