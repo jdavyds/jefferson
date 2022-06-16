@@ -6,6 +6,7 @@ import fb from './../assets/facebook.svg'
 import twitter from './../assets/twitter.svg'
 import ig from './../assets/instagram.svg'
 import linkedin from './../assets/linkedin.svg'
+import youtube from './../assets/twitter.svg'
 import { Link, Outlet } from "react-router-dom";
 export default function Footer() {
   return (
@@ -87,6 +88,7 @@ export default function Footer() {
             <img src={twitter} alt="" />
             <img src={ig} alt="" />
             <img src={linkedin} alt="" />
+            <img src={youtube} alt="" />
           </nav>
         </div>
       </section>

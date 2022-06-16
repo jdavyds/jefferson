@@ -77,11 +77,11 @@ export default function Header() {
         </nav>
         <nav className={style.hamNav}>
           <NavLink to="/about">About</NavLink>
-          <NavLink to="/">Services</NavLink>
-          <NavLink to="/">Invest in Hospitality</NavLink>
-          <NavLink to="/">Collections</NavLink>
-          <NavLink to="/">Jefferson Life</NavLink>
-          <NavLink to="/">Contact Us</NavLink>
+          <NavLink to="/services">Services</NavLink>
+          <NavLink to="/invest">Invest in Hospitality</NavLink>
+          <NavLink to="/collections">Collections</NavLink>
+          <NavLink to="/jefferson-life">Jefferson Life</NavLink>
+          <NavLink to="/contact">Contact Us</NavLink>
           <button onClick={() => navigate("/contact")}>
             Request Consultation
           </button>

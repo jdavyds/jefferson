@@ -88,18 +88,19 @@ export default function Home() {
    useEffect(() => {
      if(window.innerWidth > 768) {
        setInterval(() => {
+         if(count < 4) {
+           setCount(count + 1)
+         } else {
+           setCount(1)
+         }
          if (count === 1) {
            handleTwo();
-           setCount(2);
          } else if (count === 2) {
            handleThree();
-           setCount(3);
          } else if (count === 3) {
            handleFour();
-           setCount(4);
          } else if (count === 4) {
            handleOne();
-           setCount(1);
          }
        }, 9000);
      }

@@ -20,6 +20,9 @@
 .footer_abt img {
     margin: 30px;
 }
+.footer_abt a img {
+    height: 50px;
+}
 .footer_contact {
     padding: 30px;
 }

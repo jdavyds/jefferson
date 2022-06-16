@@ -403,6 +403,11 @@
     box-shadow: 0 0 10px 0 rgb(211, 206, 206);
     display: flex;
     align-items: center;
+    animation: trans 2s;
+}
+@keyframes trans {
+  0% { opacity: 0.5; }
+  100% { opacity: 1; }
 }
 .projects nav.pactive {
     border: 1px solid rgb(248, 169, 17);
@@ -433,6 +438,11 @@
     padding: 10px 0;
     line-height: 1.6;
     opacity: 0.6;
+    animation: para 2s;
+}
+@keyframes para {
+  0% { opacity: 0; }
+  100% { opacity: 0.6; }
 }
 .projects button {
     background: inherit;
@@ -623,7 +633,7 @@
 .jpart div:first-of-type span {
     height: 1px;
     width: 100%;
-    background: gainsboro;
+    background: black;
 }
 .jpart div:first-of-type img {
     height: auto;
@@ -637,7 +647,18 @@
     margin: 20px 0;
     padding-bottom: 30px;
     width: 100%;
-    border-bottom: 1px solid gainsboro;
+    border-bottom: 1px solid black;
+    overflow-x: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+.jpart div:last-of-type::-webkit-scrollbar {
+    display: none;
+}
+.jpart div:last-of-type img {
+    width: auto;
+    height: auto;
+    margin-right: 5px;
 }
 .subscribe {
     display: flex;
