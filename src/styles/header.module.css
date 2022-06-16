@@ -5,18 +5,27 @@
     z-index: 999999999;
 }
 .prehead {
-    padding: 5px 0;
-    font-size: 15px;
+    padding: 5px 10px;
+    font-size: 14px;
     background: rgb(237, 237, 237);
     display: flex;
     justify-content: flex-end;
     align-items: center;
 }
+.prehead nav {
+    display: flex;
+}
+.prehead nav:first-of-type {
+    margin-right: 60px;
+}
 .prehead span {
     display: flex;
     align-items: center;
-    margin-right: 30px;
+    margin-right: 10px;
     opacity: 0.6;
+}
+.prehead nav:first-of-type span:first-of-type {
+    font-size: 13;
 }
 .prehead span img {
     margin-right: 5px;
@@ -35,10 +44,10 @@
     width: 70%;
     display: flex;
     justify-content: center;
-    font-size: 16px;
+    font-size: 15px;
 }
-.main_head a {
-    margin: 0 20px;
+header a {
+    margin: 0 10px;
     color: rgb(49, 52, 53);
     text-decoration: none;
 }
@@ -48,8 +57,9 @@
     border: none;
     border-radius: 10px;
     height: 45px;
+    min-width: 170px;
     width: fit-content;
-    font-size: 16px;
+    font-size: 15px;
     padding: 0 10px;
     cursor: pointer;
 }
@@ -94,7 +104,7 @@
         position: absolute;
         top: 0;
         width: 100%;
-        height: 100vh;
+        height: 75vh;
         background: white;
         display: flex;
         flex-direction: column;
@@ -115,19 +125,19 @@
         margin-right: auto;
     }
     .hamHead nav:first-of-type span img {
-        margin-right: 5px;
+        margin-right: 3px;
         height: 15px;
     }
     .hamNav {
         height: 100%;
-        padding: 0 20px;
+        padding: 0 10px;
         display: flex;
         flex-direction: column;
-        justify-content: space-evenly;    
+        justify-content: space-evenly; 
+        align-items: flex-start;   
     }
     .hamNav a {
-        color: rgb(49, 52, 53);
-        text-decoration: none;
+        margin: 0 5px;
     }
     .hamNav button {
         background: rgb(248, 169, 17);
@@ -138,13 +148,14 @@
         width: fit-content;
         font-size: 16px;
         padding: 0 10px;
+        margin: 0 5px;
         cursor: pointer;
     }
     .hamNav div {
         height: 30px;
         width: 30px;
         margin: 0 auto;
-        padding: 30px;
+        padding: 20px;
         background: gainsboro;
         display: flex;
         align-items: center;

@@ -4,7 +4,7 @@ import logo from './../assets/Jefferson  logo.png'
 import icon1 from './../assets/hos.png'
 import icon2 from "./../assets/profile.svg";
 import icon3 from "./../assets/profile-circle.svg";
-import { Link, Outlet, useNavigate } from "react-router-dom";
+import { NavLink, Outlet, useNavigate } from "react-router-dom";
 import ham from './../assets/ham.png'
 import cancel from './../assets/cancel.svg'
 export default function Header() {
@@ -27,28 +27,32 @@ export default function Header() {
   return (
     <header className={sticky ? style.sticky : ""}>
       <div className={style.prehead}>
-        <span>Shop hospitality and kitchen wares on {">>"} </span>
-        <span>
-          <img src={icon1} alt="" /> Hospitalitte’ Shop
-        </span>
-        <span>
-          <img src={icon2} alt="" /> Join Life
-        </span>
-        <span>
-          <img src={icon3} alt="" /> Sign In
-        </span>
+        <nav>
+          <span>Shop hospitality and kitchen wares on {">>"} </span>
+          <span>
+            <img src={icon1} alt="" /> Hospitalitte’ Shop
+          </span>
+        </nav>
+        <nav>
+          <span>
+            <img src={icon3} alt="" /> Join Life
+          </span>
+          <span>
+            <img src={icon2} alt="" /> Sign In
+          </span>
+        </nav>
       </div>
       <div className={style.main_head}>
-        <Link to="/">
+        <NavLink to="/">
           <img src={logo} alt="" className={style.logo} />
-        </Link>
+        </NavLink>
         <nav>
-          <Link to="/about">About</Link>
-          <Link to="/">Services</Link>
-          <Link to="/">Invest in Hospitality</Link>
-          <Link to="/">Collections</Link>
-          <Link to="/">Jefferson Life</Link>
-          <Link to="/">Contact Us</Link>
+          <NavLink to="/about">About</NavLink>
+          <NavLink to="/">Services</NavLink>
+          <NavLink to="/">Invest in Hospitality</NavLink>
+          <NavLink to="/">Collections</NavLink>
+          <NavLink to="/">Jefferson Life</NavLink>
+          <NavLink to="/">Contact Us</NavLink>
         </nav>
         <button onClick={() => navigate("/contact")}>
           Request Consultation
@@ -72,12 +76,12 @@ export default function Header() {
           </span>
         </nav>
         <nav className={style.hamNav}>
-          <Link to="/about">About</Link>
-          <Link to="/">Services</Link>
-          <Link to="/">Invest in Hospitality</Link>
-          <Link to="/">Collections</Link>
-          <Link to="/">Jefferson Life</Link>
-          <Link to="/">Contact Us</Link>
+          <NavLink to="/about">About</NavLink>
+          <NavLink to="/">Services</NavLink>
+          <NavLink to="/">Invest in Hospitality</NavLink>
+          <NavLink to="/">Collections</NavLink>
+          <NavLink to="/">Jefferson Life</NavLink>
+          <NavLink to="/">Contact Us</NavLink>
           <button onClick={() => navigate("/contact")}>
             Request Consultation
           </button>

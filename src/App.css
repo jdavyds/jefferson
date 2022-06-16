@@ -4,3 +4,6 @@
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
 }
+.active {
+  color: rgb(248, 169, 17);
+}

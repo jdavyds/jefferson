@@ -40,6 +40,7 @@
     display: flex;
     flex-direction: column;
     margin: 0 auto;
+    font-size: 14px;
 }
 .footer a {
     margin: 10px 0;
@@ -50,7 +51,6 @@
     display: flex;
     flex-direction: column;
     padding: 0 120px;
-    position: relative;
 }
 .footer section > nav {
     width: 100%;
@@ -59,6 +59,8 @@
     justify-content: center;
     padding: 20px 0;
     border-bottom: 2px solid;
+    position: relative;
+    font-size: 14px;
 }
 .footer section a{
     margin: 10px;
@@ -66,17 +68,17 @@
 .footer section div {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     padding: 20px;
+    position: relative;
 }
-.foooter .partners {
-    display: flex;
-    align-items: center;
+.footer section span {
+    font-size: 14px;
 }
-.partners img {
-    height: 60px;
-    width: 60px;
-    margin: 0 10px;
+.footer .socials {
+    position: absolute;
+    top: 15px;
+    right: 100px;
 }
 .footer .socials img {
     margin: 0 10px;
@@ -139,11 +141,11 @@
     border-top: 1px solid;
     text-align: center;
 }
-.partners {
-    display: none;
-}
-.socials {
+.footer .socials {
     margin: 15px 0;
+    position: unset;
+    top: unset;
+    right: unset;
 }
 .footer .socials img {
     margin: 0 10px;

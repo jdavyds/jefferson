@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useEffect, useState} from 'react'
 import style from './../styles/home.module.css'
 import Header from './Header'
 import Footer from './Footer'
@@ -7,7 +7,7 @@ import vid from './../assets/Group 2.png'
 import partner1 from './../assets/download 2.png'
 import partner2 from './../assets/images (35) 1.png'
 import partner3 from './../assets/images (36).png'
-import partner4 from './../assets/images (7).png'
+import partner4 from './../assets/images (8) (1).png'
 import partner5 from './../assets/images (9).png'
 import abt from './../assets/know.png'
 import exp from './../assets/export.png'
@@ -22,7 +22,7 @@ import icon8 from "./../assets/icon8.png";
 import success1 from './../assets/success1.png'
 import success2 from "./../assets/success2.png";
 import success3 from "./../assets/success3.png";
-import success4 from "./../assets/success4.png";
+import success4 from "./../assets/images (8) (1).png";
 import arrow from './../assets/Vector.png'
 import invert from './../assets/invert.png'
 import stars from './../assets/stars.png'
@@ -31,6 +31,25 @@ import project2 from "./../assets/gallery2.png";
 import project3 from "./../assets/gallery3.png";
 import project4 from "./../assets/gallery4.png";
 import feedback from './../assets/feedback1.png'
+import ph1 from './../assets/ph1.jpg'
+import ph2 from "./../assets/ph2.jpg";
+import ph3 from './../assets/ph3.jpg'
+import ph4 from "./../assets/ph4.jpg";
+import ph5 from "./../assets/ph5.jpg";
+import ph6 from "./../assets/ph6.jpg";
+import ph7 from "./../assets/ph7.jpg";
+import ph8 from "./../assets/ph8.jpg";
+import j1 from "./../assets/dezeen-magazine-logo-vector.png";
+import j2 from "./../assets/space-logo.png";
+import j3 from "./../assets/Heineken-Logo.png";
+import j4 from "./../assets/lifestyle.png";
+import j5 from "./../assets/ukh.png";
+import j6 from "./../assets/hen.png";
+import j7 from "./../assets/redson logo (1).png";
+import j8 from "./../assets/LOGO 1.png";
+import j9 from "./../assets/eagleplaza.png";
+import j10 from "./../assets/rebear.png"
+import j11 from "./../assets/jp 1.png";
 import { Link } from "react-router-dom";
 
 export default function Home() {
@@ -41,45 +60,50 @@ export default function Home() {
 
 
   function handleOne() {
-    if(one === true) {
-      setOne(false);
-    } else {
       setOne(true);
       setTwo(false);
       setThree(false);
       setFour(false);
-    }
   }
   function handleTwo() {
-    if(two === true) {
-      setTwo(false);
-    } else {
       setTwo(true);
       setOne(false);
       setThree(false);
       setFour(false);
-    }
   }
   function handleThree() {
-    if(three === true) {
-      setThree(false);
-    } else {
       setThree(true);
       setOne(false);
       setTwo(false);
       setFour(false);
-    }
   }
   function handleFour() {
-    if(four === true) {
-      setFour(false);
-    } else {
       setFour(true);
       setOne(false);
       setTwo(false);
       setThree(false);
-    }
   }
+   const [count, setCount] = useState(1);
+
+   useEffect(() => {
+     if(window.innerWidth > 768) {
+       setInterval(() => {
+         if (count === 1) {
+           handleTwo();
+           setCount(2);
+         } else if (count === 2) {
+           handleThree();
+           setCount(3);
+         } else if (count === 3) {
+           handleFour();
+           setCount(4);
+         } else if (count === 4) {
+           handleOne();
+           setCount(1);
+         }
+       }, 5000);
+     }
+   }, [count]);
   return (
     <main>
       <Header />
@@ -108,8 +132,8 @@ export default function Home() {
         <figure>
           <img src={partner1} alt="" />
           <img src={partner2} alt="" />
-          <img src={partner4} alt="" />
           <img src={partner5} alt="" />
+          <img src={partner4} alt="" />
           <img src={partner3} alt="" />
         </figure>
       </section>
@@ -314,31 +338,29 @@ export default function Home() {
               See more projects <img src={exp} alt="" />
             </button>
           </div>
-          <figure className={style.projMain}>
-            <img
-              src={
-                one ? project1 : two ? project2 : three ? project3 : project4
-              }
-              alt=""
-            />
-            <img
-              src={
-                one ? project2 : two ? project3 : three ? project4 : project1
-              }
-              alt=""
-            />
-            <img
-              src={
-                one ? project3 : two ? project4 : three ? project1 : project2
-              }
-              alt=""
-            />
-            <img
-              src={
-                one ? project4 : two ? project1 : three ? project2 : project3
-              }
-              alt=""
-            />
+          <figure className={one ? style.projMain : style.projHide}>
+            <img src={project1} alt="" />
+            <img src={project2} alt="" />
+            <img src={project3} alt="" />
+            <img src={project4} alt="" />
+          </figure>
+          <figure className={two ? style.projMain : style.projHide}>
+            <img src={ph1} alt="" />
+            <img src={ph2} alt="" />
+            <img src={ph3} alt="" />
+            <img src={ph4} alt="" />
+          </figure>
+          <figure className={three ? style.projMain : style.projHide}>
+            <img src={project1} alt="" />
+            <img src={project2} alt="" />
+            <img src={project3} alt="" />
+            <img src={project4} alt="" />
+          </figure>
+          <figure className={four ? style.projMain : style.projHide}>
+            <img src={ph5} alt="" />
+            <img src={ph6} alt="" />
+            <img src={ph7} alt="" />
+            <img src={ph8} alt="" />
           </figure>
         </div>
       </section>
@@ -429,6 +451,26 @@ export default function Home() {
               and/or kitchen{" "}
             </p>
           </nav>
+        </div>
+      </section>
+      <section className={style.jpart}>
+        <div>
+          <span></span>
+          <img src={j11} alt="" />
+          <span></span>
+        </div>
+        <div>
+          <img src={j1} alt="" />
+          <img src={partner3} alt="" />
+          <img src={j2} alt="" />
+          <img src={j3} alt="" />
+          <img src={j4} alt="" />
+          <img src={j5} alt="" />
+          <img src={j6} alt="" />
+          <img src={j7} alt="" />
+          <img src={j8} alt="" />
+          <img src={j9} alt="" />
+          <img src={j10} alt="" />
         </div>
       </section>
       <section className={style.subscribe}>

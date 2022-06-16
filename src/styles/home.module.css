@@ -399,6 +399,7 @@
     width: 80%;
     height: 80px;
     margin: 5px 0;
+    border: 1px solid rgb(248, 169, 17);
     border-radius: 10px;
     box-shadow: 0 0 10px 0 rgb(211, 206, 206);
     display: flex;
@@ -407,6 +408,7 @@
 .projects nav > img:first-of-type {
     height: 90%;
     margin: 0 10px;
+    border-radius: 50%;
 }
 .projects nav > img:last-of-type {
     margin: 0 20px 0 auto;
@@ -445,6 +447,18 @@
 .projects button img {
     margin: 0 10px;
     height: 18px;
+}
+.success .projHide {
+    display: none;
+}
+.success .projMain {
+    display: flex;
+    flex-wrap: wrap;
+    animation: fadeIn 3s;
+}
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
 }
 .success .projMain img {
     width: 45%;
@@ -514,6 +528,9 @@
 }
 .resHide {
     display: none
+}
+.success .projMain {
+    display: none;
 }
 }
 .feedbacks {
@@ -588,6 +605,38 @@
     font-size: 14px;
 }   
 }
+.jpart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px 0;
+    padding: 0 100px;
+}
+.jpart div:first-of-type {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.jpart div:first-of-type span {
+    height: 3px;
+    width: 100%;
+    background: gainsboro;
+}
+.jpart div:first-of-type img {
+    height: auto;
+    width: auto;
+    margin: 0 30px;
+}
+.jpart div:last-of-type {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0;
+    padding-bottom: 30px;
+    width: 100%;
+    border-bottom: 5px solid gainsboro;
+}
 .subscribe {
     display: flex;
     flex-direction: column;
@@ -626,6 +675,27 @@
     justify-content: center;
 }
 @media only screen and (max-width: 800px) { 
+.jpart {
+    margin: 20px 0;
+    padding: 15px;
+}
+.jpart div:first-of-type {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.jpart div:first-of-type span {
+    display: none;
+}
+.jpart div:last-of-type {
+    padding-bottom: 30px;
+    border-bottom: none;
+    overflow-x: scroll;
+}
+.jpart div:last-of-type img {
+    margin: 0 10px;
+}
 .subscribe {
     display: flex;
     flex-direction: column;
