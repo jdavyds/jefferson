@@ -687,16 +687,19 @@
     justify-content: center;
     width: 100%;
 }
-.jpart div:first-of-type span {
-    display: none;
-}
 .jpart div:last-of-type {
     padding-bottom: 30px;
-    border-bottom: none;
     overflow-x: scroll;
+}
+.jpart div:first-of-type img {
+    margin: 0 10px;
 }
 .jpart div:last-of-type img {
     margin: 0 10px;
+}
+.jpart div:last-of-type {
+    margin: 10px 0;
+    padding-bottom: 20px;
 }
 .subscribe {
     display: flex;
