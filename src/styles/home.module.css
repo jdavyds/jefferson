@@ -195,8 +195,8 @@
 }
 .partners figure {
     padding: 15px;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+    justify-content: flex-start;
+    overflow-x: scroll;
 }
 .partners figure img {
     width: 40%;
@@ -399,11 +399,13 @@
     width: 80%;
     height: 80px;
     margin: 5px 0;
-    border: 1px solid rgb(248, 169, 17);
     border-radius: 10px;
     box-shadow: 0 0 10px 0 rgb(211, 206, 206);
     display: flex;
     align-items: center;
+}
+.projects nav.pactive {
+    border: 1px solid rgb(248, 169, 17);
 }
 .projects nav > img:first-of-type {
     height: 90%;
@@ -619,7 +621,7 @@
     width: 100%;
 }
 .jpart div:first-of-type span {
-    height: 3px;
+    height: 1px;
     width: 100%;
     background: gainsboro;
 }
@@ -635,7 +637,7 @@
     margin: 20px 0;
     padding-bottom: 30px;
     width: 100%;
-    border-bottom: 5px solid gainsboro;
+    border-bottom: 1px solid gainsboro;
 }
 .subscribe {
     display: flex;

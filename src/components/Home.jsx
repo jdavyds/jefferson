@@ -101,7 +101,7 @@ export default function Home() {
            handleOne();
            setCount(1);
          }
-       }, 5000);
+       }, 9000);
      }
    }, [count]);
   return (
@@ -120,7 +120,7 @@ export default function Home() {
             Lorepsum Lorepsum
           </p>
           <nav>
-            <button className={style.hero_btn}>Request Consultant</button>
+            <button className={style.hero_btn}>Request Consultation</button>
             <button className={style.hero_vid}>
               <img src={vid} alt="" /> Watch Video
             </button>
@@ -262,7 +262,7 @@ export default function Home() {
         <h2>OUR SUCCESS STORIES</h2>
         <div>
           <div className={style.projects}>
-            <nav onClick={handleOne}>
+            <nav onClick={handleOne} className={one ? style.pactive : ""}>
               <img src={success1} alt="" />
               <span>
                 <b>Temple Grill</b>
@@ -280,7 +280,7 @@ export default function Home() {
               <img src={project3} alt="" />
               <img src={project4} alt="" />
             </figure>
-            <nav onClick={handleTwo}>
+            <nav onClick={handleTwo} className={two ? style.pactive : ""}>
               <img src={success2} alt="" />
               <span>
                 <b>SOHO bar and Resturant</b>
@@ -298,7 +298,7 @@ export default function Home() {
               <img src={project4} alt="" />
               <img src={project1} alt="" />
             </figure>
-            <nav onClick={handleThree}>
+            <nav onClick={handleThree} className={three ? style.pactive : ""}>
               <img src={success3} alt="" />
               <span>
                 <b>Redson Bet</b>
@@ -316,17 +316,17 @@ export default function Home() {
               <img src={project1} alt="" />
               <img src={project2} alt="" />
             </figure>
-            <nav onClick={handleFour}>
+            <nav onClick={handleFour} className={four ? style.pactive : ""}>
               <img src={success4} alt="" />
               <span>
-                <b>Mayfair Design Studio</b>
+                <b>Cloudvista Restaurant</b>
                 <img src={stars} alt="" />
               </span>
               <img src={four ? invert : arrow} alt="" />
             </nav>
             <p className={four ? style.show : ""}>
-              Mayfair is a progressive and innovative hospitality investment,
-              management and development company
+              Cloudvista Restaurant is a progressive and innovative hospitality
+              investment, management and development company
             </p>
             <figure className={four ? style.resShow : style.resHide}>
               <img src={project4} alt="" />
