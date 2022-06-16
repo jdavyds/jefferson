@@ -6,7 +6,7 @@ import fb from './../assets/facebook.svg'
 import twitter from './../assets/twitter.svg'
 import ig from './../assets/instagram.svg'
 import linkedin from './../assets/linkedin.svg'
-import youtube from './../assets/twitter.svg'
+import youtube from './../assets/youtube.svg'
 import { Link, Outlet } from "react-router-dom";
 export default function Footer() {
   return (
@@ -63,11 +63,11 @@ export default function Footer() {
         <div className={style.footer_contact}>
           <h3>Contact</h3>
           <p>
-            Jefferson Hospitality Inc <br /> Dalton House, 60 Windsor Road{" "}
+            London Office <br /> Dalton House, 60 Windsor Road{" "}
             <br /> London, Greater London <br /> SW19 2RR <br /> United Kingdom
           </p>
           <p>
-            Jefferson Hospitality Inc <br /> ARTISAN PLACE <br /> Suite 4, Plot
+            Nigeria Office <br /> ARTISAN PLACE <br /> Suite 4, Plot
             284, Cadastral Zone B06 <br /> Mabushi District, Abuja <br />{" "}
             Nigeria
           </p>

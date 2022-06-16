@@ -50,6 +50,7 @@ import j8 from "./../assets/LOGO 1.png";
 import j9 from "./../assets/eagleplaza.png";
 import j10 from "./../assets/rebear.png"
 import j11 from "./../assets/jp 1.png";
+import j12 from "./../assets/images (7).png";
 import { Link } from "react-router-dom";
 
 export default function Home() {
@@ -462,7 +463,7 @@ export default function Home() {
         </div>
         <div>
           <img src={j1} alt="" />
-          <img src={partner3} alt="" />
+          <img src={j12} alt="" />
           <img src={j2} alt="" />
           <img src={j3} alt="" />
           <img src={j4} alt="" />

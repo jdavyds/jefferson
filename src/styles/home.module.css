@@ -641,24 +641,20 @@
     margin: 0 30px;
 }
 .jpart div:last-of-type {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     margin: 20px 0;
     padding-bottom: 30px;
+    max-width: 100vw;
+    overflow: hidden;
     width: 100%;
     border-bottom: 1px solid black;
-    overflow-x: scroll;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-}
-.jpart div:last-of-type::-webkit-scrollbar {
-    display: none;
 }
 .jpart div:last-of-type img {
-    width: auto;
-    height: auto;
-    margin-right: 5px;
+    width: 100%;
+    /* height: 50px; */
 }
 .subscribe {
     display: flex;
