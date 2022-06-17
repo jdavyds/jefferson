@@ -96,11 +96,14 @@ export default function Home() {
          }
          if (count === 1) {
            handleTwo();
-         } else if (count === 2) {
+         } 
+         if (count === 2) {
            handleThree();
-         } else if (count === 3) {
+         }
+         if (count === 3) {
            handleFour();
-         } else if (count === 4) {
+         }
+         if (count === 4) {
            handleOne();
          }
        }, 9000);
@@ -118,9 +121,11 @@ export default function Home() {
             We Upscale <b>Hospitality</b> <br /> Services
           </h2>
           <p>
-            Lorepsum Lorepsum Lorepsum Lorepsum Lorepsum Lorepsum lorepsum
-            Lorepsum Lorepsum
+            Dominate the Hospitality Industry with us. Build your hospitality
+            business with us and truly live the dream of excellence and class
+            you want to be famous for.
           </p>
+          <p>Over 100+ businesses have confidence in our expertise.</p>
           <nav>
             <button className={style.hero_btn}>Request Consultation</button>
             <button className={style.hero_vid}>
@@ -147,12 +152,20 @@ export default function Home() {
           </div>
           <div className={style.abt_info}>
             <p>
-              Jefferson Hospitality is a progressive and innovative hospitality
-              investment, management and development company. Our focus is on
-              mid to upscale hotels, restaurants, nightlife venues, and resorts
-              intelligently designed with user experience at the centre and
-              operated to cater to business travellers' professional and leisure
-              needs.
+              Every business entering or growing in the hospitality industry
+              desperately needs one thing: Thorough guidance from businesses who
+              have already walked that path.
+            </p>
+            <p>
+              At Jefferson Hospitality, we have created a clear path to success
+              through time-tested strategies and progressive innovations. We are
+              an innovative hospitality investment, management and development
+              company with a focus on mid to upscale hotels, restaurants,
+              nightlife venues, and resorts. We have also designed an immersive
+              user experience that will ensure that you are professionally able
+              to endear your customers to your brand. We hold a strong belief
+              that business and pleasure can be found in one place-and that is
+              your establishment.
             </p>
             <Link to="/">
               Learn More <img src={exp} alt="" />{" "}
@@ -177,8 +190,10 @@ export default function Home() {
             </figure>
             <h4>CONCEPT AND BRAND DEVELOPMENT</h4>
             <p>
-              We create unique, exciting and sustainable food service brands
-              based on each client’s specific requirements.
+              Your concept can be transformed into a vibrant brand personality.
+              So we use your uniqueness to design a sustainable brand
+              personality and concept that will attract your customers to you
+              right from your start.
             </p>
           </nav>
           <nav>
@@ -187,8 +202,9 @@ export default function Home() {
             </figure>
             <h4>OPERATION STATEMENT DOCUMENTATION</h4>
             <p>
-              We produce a detailed document outlining how the concept is
-              conceived.
+              We help you track your financial statements with accurate and real
+              time information to show your performance and financial position
+              at each stage of your company’s growth.
             </p>
           </nav>
           <nav>
@@ -197,9 +213,10 @@ export default function Home() {
             </figure>
             <h4>PROJECT MANAGEMENT</h4>
             <p>
-              Acting on your behalf, we will ensure what was agreed during the
-              concept development phase is professionally implemented, on time
-              and within budget.
+              We help your business identify and manage risks, manage resources
+              for your project successfully through smart budgeting and clear
+              communications of goals and deliverables across the involved teams
+              and stakeholders.
             </p>
           </nav>
           <nav>
@@ -208,8 +225,10 @@ export default function Home() {
             </figure>
             <h4>OPERATING SYSTEMS</h4>
             <p>
-              We standardize and document your systems to ensure efficiency and
-              ease of outlet duplication.
+              Your company’s tools, processes and model of operation is
+              carefully curated and incorporated into all levels of operation so
+              you can have uniform satisfaction across all franchises and
+              locations.
             </p>
           </nav>
           <nav>
@@ -218,8 +237,10 @@ export default function Home() {
             </figure>
             <h4>FRANCHISING</h4>
             <p>
-              We source suitable franchises and potential franchisees and
-              negotiate on your behalf to ensure
+              Want to expand into franchises? Ask us! Our vast resources allow
+              you to properly plan and scale from one single location to
+              several. We source suitable franchises and potential franchisees
+              and negotiate on your behalf to ensure you successfully expand.
             </p>
           </nav>
           <nav>
@@ -228,9 +249,10 @@ export default function Home() {
             </figure>
             <h4>KITCHEN PLANNING AND OPERATIONAL DESIGN REVIEW</h4>
             <p>
-              Based on your concepts, we will work with equipment suppliers
-              and/or kitchen specialists to ensure efficient back and front of
-              house space planning and equipment specifications.
+              Based on your concepts, we work with equipment suppliers and/or
+              kitchen specialists to ensure efficient back and front space
+              planning, making sure that your equipment meets your exact
+              specifications.
             </p>
           </nav>
           <nav>
@@ -239,9 +261,11 @@ export default function Home() {
             </figure>
             <h4>MARKET RESEARCH</h4>
             <p>
-              Through our in-depth knowledge of the market, we are able to
-              provide you with critical market information enabling you to
-              develop your project according to existing or future demand
+              Rare marketing insights are at our fingertips and we spare no
+              expense to ensure you also operate with such in-depth knowledge as
+              well. We reveal critical marketing information that will save you
+              from costly mistakes as well as help you develop your project
+              according to existing or future demand.
             </p>
           </nav>
           <nav>
@@ -250,9 +274,14 @@ export default function Home() {
             </figure>
             <h4>MANAGEMENT RECRUITMENT AND TRAINING</h4>
             <p>
-              Being the service industry, we source, recruit and train suitable
-              management staff that are capable of following through with
-              delivering exceptional service and food quality to your guests.
+              Being in the service industry has helped us source for, recruit,
+              train and deploy suitable management staff that understand the
+              delicate nature of optimum service in the hospitality business.
+              Exceptional service will be the least of your worries with our
+              armada of rigorously trained staff. From chefs, to hotels and
+              restaurant managers, waiters, waitresses, cleaning experts-we
+              handle their recruitment and training so you can be sure that you
+              have the best employees for the job.
             </p>
           </nav>
         </div>
@@ -379,8 +408,10 @@ export default function Home() {
               </span>
             </div>
             <p>
-              Based on your concepts, we will work with equipment suppliers
-              and/or kitchen{" "}
+              I find Jefferson Hospitality to be a patient, and meticulous
+              support for me when I started up. For two years now, they have
+              continued to be my first port of call for resources, advice and
+              strategy with anything that comes up.
             </p>
           </nav>
           <nav>
@@ -393,8 +424,11 @@ export default function Home() {
               </span>
             </div>
             <p>
-              Based on your concepts, we will work with equipment suppliers
-              and/or kitchen{" "}
+              We have utilized Jefferson’s resources on market research much
+              more than we bargained for. They care so much for our restaurant
+              Franchise that as many times as we needed design, print and other
+              luxury items, we did not have to bother about where to source for
+              them.
             </p>
           </nav>
           <nav>
@@ -407,8 +441,11 @@ export default function Home() {
               </span>
             </div>
             <p>
-              Based on your concepts, we will work with equipment suppliers
-              and/or kitchen{" "}
+              Jefferson Hospitality is truly a community of professionals within
+              the hospitality industry. Anyone we have successfully partnered
+              with has that touch of Jefferson excellence that makes them true
+              professionals in their niches. Collaboration is every bit as
+              stress-free as they make it look.
             </p>
           </nav>
           <nav>
@@ -421,8 +458,10 @@ export default function Home() {
               </span>
             </div>
             <p>
-              Based on your concepts, we will work with equipment suppliers
-              and/or kitchen{" "}
+              The building of our establishment would have gone sideways if we
+              did not have Jefferson’s Hospitality’s dexterity to keep a tight
+              rein on goals and deliverables.We were able to finish everything
+              before the actual launch-which was a huge success.
             </p>
           </nav>
           <nav>
@@ -435,8 +474,12 @@ export default function Home() {
               </span>
             </div>
             <p>
-              Based on your concepts, we will work with equipment suppliers
-              and/or kitchen{" "}
+              They welcome Greenhorns to the industry! I knew nothing about the
+              business of opening a massage parlor, nor did I know what type of
+              brand I was building. They transformed the vague idea I put out-
+              fleshing it into a full-fledged brand that still makes my
+              customers want to know more about us due to the sheer strength of
+              it.
             </p>
           </nav>
           <nav>
@@ -449,8 +492,9 @@ export default function Home() {
               </span>
             </div>
             <p>
-              Based on your concepts, we will work with equipment suppliers
-              and/or kitchen{" "}
+              We had a hard time hiring support staff for our already existing
+              staff. Jefferson Hospitality made sure we had capable staff who
+              were indoctrinated into our company’s culture.
             </p>
           </nav>
         </div>
@@ -477,6 +521,10 @@ export default function Home() {
       </section>
       <section className={style.subscribe}>
         <h2>SUBSCRIBE TO OUR NEWSLETTER</h2>
+        <p>
+          Our focus is on mid to upscale hotels, restaurants,nightlife venues,
+          and resorts intelligently designed with user experience
+        </p>
         <label>
           <input type="email" placeholder="Enter your Email Address" />
           <button>Subscribe</button>
