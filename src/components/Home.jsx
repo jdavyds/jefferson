@@ -87,25 +87,52 @@ export default function Home() {
    const [count, setCount] = useState(1);
 
    useEffect(() => {
+    //  if(window.innerWidth > 768) {
+    //    setInterval(() => {
+    //      if (count === 1) {
+    //        handleTwo();
+    //        setTimeout(() => {
+    //          setCount(2);
+    //        }, 7000);
+    //      } 
+    //      if (count === 2) {
+    //        handleThree();
+    //        setTimeout(() => {
+    //          setCount(3);
+    //        }, 7000);            
+    //      }
+    //      if (count === 3) {
+    //        handleFour();
+    //        setTimeout(() => {
+    //          setCount(4);
+    //        }, 7000);
+    //      }
+    //      if (count === 4) {
+    //        handleOne();
+    //        setTimeout(() => {
+    //          setCount(1);
+    //        }, 2000);
+    //      }
+    //    }, 9000);
+    //  }
      if(window.innerWidth > 768) {
-       setInterval(() => {
-         if(count < 4) {
-           setCount(count + 1)
-         } else {
-           setCount(1)
-         }
-         if (count === 1) {
+       setTimeout(() => {
+         if(count === 1) {
            handleTwo();
-         } 
-         if (count === 2) {
-           handleThree();
+           setCount(2);
          }
-         if (count === 3) {
-           handleFour();
+         if(count === 2) {
+            handleThree();
+            setCount(3);
          }
-         if (count === 4) {
-           handleOne();
-         }
+          if(count === 3) {
+            handleFour();
+            setCount(4);
+          }
+          if(count === 4) {
+            handleOne();
+            setCount(1);
+          }
        }, 9000);
      }
    }, [count]);
