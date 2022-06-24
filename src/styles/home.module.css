@@ -106,7 +106,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 50px 30px;
+    padding: 50px 100px;
 }
 .partners small {
     font-size: 18px;
@@ -276,7 +276,7 @@
     border-bottom: 3px solid;
 }
 .expertise div {
-    padding: 0 30px;
+    padding: 0 90px;
     margin-top: 50px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -392,7 +392,7 @@
     border-bottom: 3px solid;
 }
 .success > div {
-    padding: 0 30px;
+    padding: 0 100px;
     margin: 50px 0;
     display: grid;
     grid-template-columns: 40% 60%;
@@ -565,7 +565,7 @@
 }
 .feedback {
     margin: 50px 0;
-    padding: 0 30px;
+    padding: 0 90px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
@@ -652,7 +652,7 @@
     flex-direction: column;
     align-items: center;
     margin: 50px 0;
-    padding: 0 30px;
+    padding: 0 100px;
 }
 .jpart div:first-of-type {
     display: flex;
