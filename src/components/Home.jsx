@@ -16,7 +16,6 @@ import icon5 from "./../assets/icon5.png";
 import icon6 from "./../assets/icon6.png";
 import icon7 from "./../assets/icon7.png";
 import icon8 from "./../assets/icon8.png";
-import success4 from "./../assets/images (8) (1).png";
 import arrow from './../assets/Vector.png'
 import invert from './../assets/invert.png'
 import stars from './../assets/stars.png'
@@ -334,7 +333,7 @@ export default function Home() {
               <img src={project2} alt="" />
             </figure>
             <nav onClick={handleFour} className={four ? style.pactive : ""}>
-              <img src={success4} alt="" />
+              <img src={redson_lounge} alt="" />
               <span>
                 <b>Redson Lounge</b>
                 <img src={stars} alt="" />
