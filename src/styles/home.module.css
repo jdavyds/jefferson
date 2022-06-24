@@ -114,10 +114,16 @@
 }
 .partners figure {
     width: 100%;
-    margin: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+    height: 100px;
+    margin: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    /* align-items: center; */
+    /* justify-content: space-evenly; */
+}
+.partners figure img {
+    width: 100px;
+    height: 100%;
 }
 .about {
     display: flex;
@@ -577,6 +583,29 @@
     display: flex;
     margin: 10px 0;
 }
+.feedback nav div > figure {
+    position: relative;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    
+}
+.feedback nav div > figure::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: rgba(156, 146, 146, 0.5);
+    z-index: 222;
+}
+.feedback nav div figure img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
 .feedback nav div span {
     display: flex;
     flex-direction: column;
@@ -644,9 +673,8 @@
 }
 .jpart div:last-of-type {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
     align-items: center;
-    justify-content: space-evenly;
     margin: 20px 0;
     padding-bottom: 30px;
     max-width: 100vw;
@@ -655,7 +683,6 @@
     border-bottom: 1px solid black;
 }
 .jpart div:last-of-type img {
-    width: 100%;
     margin: 0 10px;
 }
 .subscribe {

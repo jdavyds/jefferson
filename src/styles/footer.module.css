@@ -18,7 +18,10 @@
     justify-content: center;
 }
 .footer_abt img {
-    margin: 30px;
+    margin: 30px 0;
+}
+.footer_abt a {
+    width: 100%;
 }
 .footer_abt a img {
     height: 50px;
@@ -33,6 +36,8 @@
 }
 .footer_contact p {
     margin: 30px 0;
+    word-break: break-all;
+    width: 100%;
 }
 .footer_nav {
     display: grid;
@@ -117,6 +122,13 @@
 }
 .footer_contact p {
     margin: 13px 0;
+    width: 45%;
+    line-height: 1.6;
+}
+.footer_contact div {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
 }
 .footer_nav {
     padding: 15px;

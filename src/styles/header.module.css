@@ -5,7 +5,7 @@
     z-index: 999999999;
 }
 .prehead {
-    padding: 5px 10px;
+    padding: 5px 20px;
     font-size: 14px;
     background: rgb(237, 237, 237);
     display: flex;
@@ -14,9 +14,19 @@
 }
 .prehead nav {
     display: flex;
+    margin: 0 5px;
 }
 .prehead nav:first-of-type {
     margin-right: 60px;
+    display: flex;
+    justify-self: center;
+    align-self: center;
+}
+.prehead nav:last-of-type {
+    width: calc(20vw - 60px);
+    display: flex;
+    justify-content: space-between;
+
 }
 .prehead span {
     display: flex;
@@ -26,6 +36,7 @@
 }
 .prehead nav:first-of-type span:first-of-type {
     font-size: 13;
+    margin-right: 5px;
 }
 .prehead span img {
     margin-right: 5px;
@@ -57,10 +68,11 @@ header a {
     border: none;
     border-radius: 10px;
     height: 45px;
-    min-width: 170px;
-    width: fit-content;
+    min-width: fit-content;
+    width: calc(20vw - 60px);
     font-size: 15px;
     padding: 0 10px;
+    margin-right: 10px;
     cursor: pointer;
 }
 .ham {

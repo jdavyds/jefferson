@@ -28,7 +28,6 @@ export default function Footer() {
             <Link to="/team">Team</Link>
             <Link to="/">Culture</Link>
             <Link to="/">Brands</Link>
-            <Link to="/">CRS/Community</Link>
             <Link to="/">Awards</Link>
             <Link to="/careers">Career</Link>
           </nav>
@@ -37,7 +36,6 @@ export default function Footer() {
             <Link to="/">Invest in Hospitality</Link>
             <Link to="/">Collections</Link>
             <Link to="/">Deals</Link>
-            <Link to="/">Events</Link>
             <Link to="/">Shop</Link>
             <Link to="/">Download Brochure</Link>
           </nav>
@@ -45,7 +43,6 @@ export default function Footer() {
             <Link to="/">Jefferson Life</Link>
             <Link to="/">First Start</Link>
             <Link to="/">Partnership Life</Link>
-            <Link to="/">Made In Africa (MIA)</Link>
             <Link to="/">Trainings</Link>
             <Link to="/">Webinar</Link>
             <Link to="/">Consultation</Link>
@@ -56,21 +53,22 @@ export default function Footer() {
             <Link to="/">Media/Press</Link>
             <Link to="/">FAQ</Link>
             <Link to="/">Affiliate</Link>
-            <Link to="/">Support</Link>
             <Link to="/">Contact</Link>
           </nav>
         </div>
         <div className={style.footer_contact}>
           <h3>Contact</h3>
-          <p>
-            London Office <br /> Dalton House, 60 Windsor Road{" "}
-            <br /> London, Greater London <br /> SW19 2RR <br /> United Kingdom
-          </p>
-          <p>
-            Nigeria Office <br /> ARTISAN PLACE <br /> Suite 4, Plot
-            284, Cadastral Zone B06 <br /> Mabushi District, Abuja <br />{" "}
-            Nigeria
-          </p>
+          <div>
+            {" "}
+            <p>
+              London Office <br /> Dalton House, 60 Windsor Road <br /> London,
+              Greater London <br /> SW19 2RR <br /> United Kingdom
+            </p>
+            <p>
+              Nigeria Office <br /> ARTISAN PLACE <br /> Suite 4, Plot 284,
+              Cadastral Zone B06 <br /> Mabushi District, Abuja <br /> Nigeria
+            </p>
+          </div>
         </div>
       </main>
       <section>
