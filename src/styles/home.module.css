@@ -106,7 +106,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 50px;
+    padding: 50px 30px;
 }
 .partners small {
     font-size: 18px;
@@ -118,8 +118,6 @@
     margin: 50px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    /* align-items: center; */
-    /* justify-content: space-evenly; */
 }
 .partners figure img {
     width: 100px;
@@ -138,8 +136,8 @@
 }
 .abt {
     margin: 30px 0;
-    padding: 0 150px;
-    min-height: 450px;
+    padding: 0 100px;
+    min-height: 400px;
     height: fit-content;
     display: grid;
     grid-template-columns: 40% 60%;
@@ -150,7 +148,7 @@
 }
 .abt_img img {
     width: 100%;
-    height: calc(100% + 43px);
+    height: calc(100% + 44px);
 }
 .abt_info {
     height: 100%;
@@ -168,14 +166,14 @@
 .abt_info a {
     color: rgb(49, 52, 53, 0.7);
     font-weight: 500;
-    margin: 30px 35px;
-    font-size: 18px;
+    margin: 20px 35px;
+    font-size: 16px;
     display: flex;
     align-items: center;
 }
 .abt_info a img {
-    width: 20px;
-    height: 20px;
+    width: 15px;
+    height: 15px;
     margin: 0 5px;
 }
 .abt_info nav {
@@ -185,7 +183,7 @@
     color: white;
 }
 .abt_info nav span {
-    padding: 25px 50px;
+    padding: 20px 50px;
     line-height: 1.5;
 }
 .abt_info nav b {
@@ -203,11 +201,11 @@
 }
 .partners figure {
     padding: 15px;
+    display: flex;
     justify-content: flex-start;
     overflow-x: scroll;
 }
 .partners figure img {
-    width: 40%;
     margin: 10px;
 }
 .about {
@@ -278,7 +276,7 @@
     border-bottom: 3px solid;
 }
 .expertise div {
-    padding: 0 150px;
+    padding: 0 30px;
     margin-top: 50px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -394,7 +392,7 @@
     border-bottom: 3px solid;
 }
 .success > div {
-    padding: 0 120px;
+    padding: 0 30px;
     margin: 50px 0;
     display: grid;
     grid-template-columns: 40% 60%;
@@ -474,6 +472,7 @@
 .success .projMain {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     animation: fadeIn 3s;
 }
 @keyframes fadeIn {
@@ -481,9 +480,9 @@
   100% { opacity: 1; }
 }
 .success .projMain img {
-    width: 45%;
+    width: 48%;
     height: 250px;
-    margin: 10px;
+    /* margin: 10px; */
 }
 .resHide, .resShow {
     display: none;
@@ -566,7 +565,7 @@
 }
 .feedback {
     margin: 50px 0;
-    padding: 0 100px;
+    padding: 0 30px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
@@ -653,7 +652,7 @@
     flex-direction: column;
     align-items: center;
     margin: 50px 0;
-    padding: 0 100px;
+    padding: 0 30px;
 }
 .jpart div:first-of-type {
     display: flex;
@@ -675,8 +674,8 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
     align-items: center;
-    margin: 20px 0;
-    padding-bottom: 30px;
+    margin: 10px 0;
+    padding-bottom: 20px;
     max-width: 100vw;
     overflow: hidden;
     width: 100%;
@@ -750,7 +749,7 @@
 .jpart div:last-of-type {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     margin: 0;
     padding-bottom: 10px;
     overflow: scroll;

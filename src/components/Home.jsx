@@ -19,18 +19,6 @@ import icon8 from "./../assets/icon8.png";
 import arrow from './../assets/Vector.png'
 import invert from './../assets/invert.png'
 import stars from './../assets/stars.png'
-import project1 from './../assets/gallery1.png'
-import project2 from "./../assets/gallery2.png";
-import project3 from "./../assets/gallery3.png";
-import project4 from "./../assets/gallery4.png";
-import ph1 from './../assets/ph1.jpg'
-import ph2 from "./../assets/ph2.jpg";
-import ph3 from './../assets/ph3.jpg'
-import ph4 from "./../assets/ph4.jpg";
-import ph5 from "./../assets/ph5.jpg";
-import ph6 from "./../assets/ph6.jpg";
-import ph7 from "./../assets/ph7.jpg";
-import ph8 from "./../assets/ph8.jpg";
 import j1 from "./../assets/dezeen-magazine-logo-vector.png";
 import j2 from "./../assets/space-logo.png";
 import heineken from "./../assets/Heineken-Logo.png";
@@ -46,7 +34,23 @@ import j12 from "./../assets/images (7).png";
 import { Link } from "react-router-dom";
 import heavens from './../assets/Heavens.png'
 import playground from "./../assets/playgroud_logo.png";
-// import playground from "./../assets/Playground.png";
+import playground1 from "./../assets/playground1.jpg";
+import playground2 from "./../assets/playground2.jpg";
+import playground3 from "./../assets/playground3.jpg";
+import playground4 from "./../assets/playground4.jpg";
+import heaven1 from "./../assets/heaven1.jpg";
+import heaven2 from "./../assets/heaven2.jpg";
+import heaven3 from "./../assets/heaven3.jpg";
+import heaven4 from "./../assets/heaven4.jpg";
+import rebar1 from "./../assets/rebar1.png";
+import rebar2 from "./../assets/rebar2.png";
+import rebar3 from "./../assets/rebar3.png";
+import rebar4 from "./../assets/rebar4.png";
+import redson1 from "./../assets/redson1.jpg";
+import redson2 from "./../assets/redson2.jpg";
+import redson3 from "./../assets/redson3.jpg";
+import redson4 from "./../assets/redson4.jpg";
+
 
 export default function Home() {
   const [one, setOne] = useState(true);
@@ -189,8 +193,7 @@ export default function Home() {
             <p>
               Get expert advice from professionals with over 10 years of
               experience in risk management, branding and strategy, operations
-              and many other areas of the hospitality industry. [learn more:
-              hyperlink to full service page]
+              and many other areas of the hospitality industry.
             </p>
           </nav>
           <nav>
@@ -201,7 +204,7 @@ export default function Home() {
             <p>
               Leverage your local surroundings and unique offerings to create
               new and exciting meal and drink experiences that your patrons
-              cannot get enough of. [learn more: hyperlink to full page].
+              cannot get enough of.
             </p>
           </nav>
           <nav>
@@ -291,10 +294,10 @@ export default function Home() {
               It offers exotic drink and high-quality VIP service.
             </p>
             <figure className={one ? style.resShow : style.resHide}>
-              <img src={project1} alt="" />
-              <img src={project2} alt="" />
-              <img src={project3} alt="" />
-              <img src={project4} alt="" />
+              <img src={heaven1} alt="" />
+              <img src={heaven2} alt="" />
+              <img src={heaven3} alt="" />
+              <img src={heaven4} alt="" />
             </figure>
             <nav onClick={handleTwo} className={two ? style.pactive : ""}>
               <img src={playground} alt="" />
@@ -309,10 +312,10 @@ export default function Home() {
               experience and beach club relaxation centre
             </p>
             <figure className={two ? style.resShow : style.resHide}>
-              <img src={project2} alt="" />
-              <img src={project3} alt="" />
-              <img src={project4} alt="" />
-              <img src={project1} alt="" />
+              <img src={playground1} alt="" />
+              <img src={playground2} alt="" />
+              <img src={playground3} alt="" />
+              <img src={playground4} alt="" />
             </figure>
             <nav onClick={handleThree} className={three ? style.pactive : ""}>
               <img src={rebar} alt="" />
@@ -327,10 +330,10 @@ export default function Home() {
               relaxation with indoor gaming experience
             </p>
             <figure className={three ? style.resShow : style.resHide}>
-              <img src={project3} alt="" />
-              <img src={project4} alt="" />
-              <img src={project1} alt="" />
-              <img src={project2} alt="" />
+              <img src={rebar1} alt="" />
+              <img src={rebar2} alt="" />
+              <img src={rebar3} alt="" />
+              <img src={rebar4} alt="" />
             </figure>
             <nav onClick={handleFour} className={four ? style.pactive : ""}>
               <img src={redson_lounge} alt="" />
@@ -345,38 +348,38 @@ export default function Home() {
               gaming ports and social centres
             </p>
             <figure className={four ? style.resShow : style.resHide}>
-              <img src={project4} alt="" />
-              <img src={project3} alt="" />
-              <img src={project2} alt="" />
-              <img src={project1} alt="" />
+              <img src={redson1} alt="" />
+              <img src={redson2} alt="" />
+              <img src={rebar3} alt="" />
+              <img src={redson4} alt="" />
             </figure>
             <button>
               See more projects <img src={exp} alt="" />
             </button>
           </div>
           <figure className={one ? style.projMain : style.projHide}>
-            <img src={project1} alt="" />
-            <img src={project2} alt="" />
-            <img src={project3} alt="" />
-            <img src={project4} alt="" />
+            <img src={heaven1} alt="" />
+            <img src={heaven2} alt="" />
+            <img src={heaven3} alt="" />
+            <img src={heaven4} alt="" />
           </figure>
           <figure className={two ? style.projMain : style.projHide}>
-            <img src={ph1} alt="" />
-            <img src={ph2} alt="" />
-            <img src={ph3} alt="" />
-            <img src={ph4} alt="" />
+            <img src={playground1} alt="" />
+            <img src={playground2} alt="" />
+            <img src={playground3} alt="" />
+            <img src={playground4} alt="" />
           </figure>
           <figure className={three ? style.projMain : style.projHide}>
-            <img src={project1} alt="" />
-            <img src={project2} alt="" />
-            <img src={project3} alt="" />
-            <img src={project4} alt="" />
+            <img src={rebar1} alt="" />
+            <img src={rebar2} alt="" />
+            <img src={rebar3} alt="" />
+            <img src={rebar4} alt="" />
           </figure>
           <figure className={four ? style.projMain : style.projHide}>
-            <img src={ph5} alt="" />
-            <img src={ph6} alt="" />
-            <img src={ph7} alt="" />
-            <img src={ph8} alt="" />
+            <img src={redson1} alt="" />
+            <img src={redson2} alt="" />
+            <img src={redson3} alt="" />
+            <img src={redson4} alt="" />
           </figure>
         </div>
       </section>
