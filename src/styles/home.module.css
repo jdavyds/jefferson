@@ -483,6 +483,7 @@
     width: 48%;
     height: 250px;
     /* margin: 10px; */
+    object-fit: cover;
 }
 .resHide, .resShow {
     display: none;

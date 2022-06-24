@@ -20,7 +20,7 @@
 .prehead nav:last-of-type {
     position: absolute;
     right: 100px;
-    width: calc(20vw - 60px);
+    width: calc(20vw - 80px);
     display: flex;
     justify-content: space-between;
 
@@ -30,12 +30,15 @@
     align-items: center;
     opacity: 0.6;
 }
+.prehead nav:last-of-type {
+    letter-spacing: 0.8px;
+}
 .prehead nav:first-of-type span:first-of-type {
     font-size: 13;
     margin-right: 5px;
 }
 .prehead span img {
-    margin-right: 5px;
+    margin-right: 10px;
 }
 .main_head {
     display: flex;
@@ -64,8 +67,7 @@ header a {
     border: none;
     border-radius: 10px;
     height: 45px;
-    /* min-width: fit-content; */
-    min-width: calc(20vw - 60px);
+    min-width: calc(20vw - 80px);
     font-size: 15px;
     padding: 0 10px;
     margin-right: 10px;
