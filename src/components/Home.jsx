@@ -5,7 +5,7 @@ import Footer from './Footer'
 import hero from './../assets/homebg.png'
 import vid from './../assets/Group 2.png'
 import redsonbet from './../assets/images (35) 1.png'
-import connecthub from './../assets/images (9).png'
+import connecthub from "./../assets/Connect Hub.jpg";
 import abt from './../assets/know.png'
 import exp from './../assets/export.png'
 import icon1 from './../assets/icon1.png'
@@ -25,15 +25,15 @@ import heineken from "./../assets/Heineken-Logo.png";
 import j4 from "./../assets/lifestyle.png";
 import j5 from "./../assets/ukh.png";
 import j6 from "./../assets/hen.png";
-import redson_lounge from "./../assets/redson logo (1).png";
-import fruity from "./../assets/LOGO 1.png";
-import eagle from "./../assets/eagleplaza.png";
-import rebar from "./../assets/rebear.png"
+import redson_lounge from "./../assets/Redson Lounge.jpg";
+import fruity from "./../assets/Vita Fruity.jpg";
+import eagle from "./../assets/Eagle Plaza.jpg";
+import rebar from "./../assets/Rebar.jpg";
 import j11 from "./../assets/jp 1.png";
 import j12 from "./../assets/images (7).png";
 import { Link } from "react-router-dom";
-import heavens from './../assets/Heavens.png'
-import playground from "./../assets/playgroud_logo.png";
+import heavens from "./../assets/Heavens.jpg";
+import playground from "./../assets/Playground.jpg";
 import playground1 from "./../assets/playground1.jpg";
 import playground2 from "./../assets/playground2.jpg";
 import playground3 from "./../assets/playground3.jpg";
