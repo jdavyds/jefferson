@@ -115,23 +115,25 @@
 }
 .footer_contact {
     padding: 15px;
+    width: 100%;
 }
 .footer_contact h3 {
     font-size: 18px;
     margin: 5px 0;
-}
-.footer_contact p {
-    margin: 13px 0;
-    width: 45%;
-    line-height: 1.6;
 }
 .footer_contact div {
     width: 100%;
     display: flex;
     justify-content: space-between;
 }
+.footer_contact p {
+    margin: 13px 0;
+    width: 45%;
+    line-height: 1.6;
+}
 .footer_nav {
     padding: 15px;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     align-items: center;

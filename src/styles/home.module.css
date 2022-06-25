@@ -645,6 +645,13 @@
     display: flex;
     flex-direction: column;
 }
+.feedback nav {
+    margin: 10px 0;
+    padding: 15px;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+}
 .feedback span img {
     height: 15px;
 }

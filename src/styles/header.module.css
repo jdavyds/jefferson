@@ -17,7 +17,6 @@
     display: flex;
 }
 .prehead nav:last-of-type {
-    background-color: aqua;
     position: absolute;
     right: 100px;
     min-width: calc(20vw - 80px);
