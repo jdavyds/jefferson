@@ -17,7 +17,7 @@ export default function Footer() {
             <img src={logo} alt="" />
           </Link>
           <p>
-            Our focus is on mid to upscale hotels, restaurants,nightlife venues,
+            Our focus is on mid to upscale hotels, restaurants, nightlife venues,
             and resorts intelligently designed with user experience
           </p>
           <img src={seal} alt="" />
@@ -61,11 +61,11 @@ export default function Footer() {
           <div>
             {" "}
             <p>
-              London Office <br /> Dalton House, 60 Windsor Road <br /> London,
+              London Office <br /> Dalton House, <br /> 60 Windsor Road <br /> London,
               Greater London <br /> SW19 2RR <br /> United Kingdom
             </p>
             <p>
-              Nigeria Office <br /> ARTISAN PLACE <br /> Suite 4, Plot 284,
+              Nigeria Office <br /> ARTISAN PLACE <br /> Suite 4, Plot 284, <br />
               Cadastral Zone B06 <br /> Mabushi District, Abuja <br /> Nigeria
             </p>
           </div>

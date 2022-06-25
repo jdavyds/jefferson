@@ -65,7 +65,7 @@
     height: 30px;
     margin: 0 10px ;
 }
-@media only screen and (max-width: 800px) { 
+@media only screen and (max-width: 850px) { 
 .hero {
     display: flex;
     flex-direction: column-reverse;
@@ -114,7 +114,7 @@
 }
 .partners figure {
     width: 100%;
-    height: 120px;
+    height: 130px;
     margin: 50px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -191,7 +191,7 @@
     font-size: 30px;
     color: white;
 }
-@media only screen and (max-width: 800px) { 
+@media only screen and (max-width: 850px) { 
 .partners {
     padding: 15px;
 }
@@ -327,7 +327,7 @@
     margin: 0 10px;
     height: 18px;
 }
-@media only screen and (max-width: 800px) { 
+@media only screen and (max-width: 850px) { 
 .expertise {
     margin-top: 0;
 }
@@ -485,13 +485,12 @@
 .success .projMain img {
     width: 48%;
     height: 250px;
-    /* margin: 10px; */
     object-fit: cover;
 }
 .resHide, .resShow {
     display: none;
 }
-@media only screen and (max-width: 800px) { 
+@media only screen and (max-width: 850px) { 
 .success {
     display: flex;
     flex-direction: column;
@@ -548,6 +547,7 @@
     width: 49%;
     height: 50vw;
     margin: 5px 0;
+    object-fit: cover;
 }
 .resHide {
     display: none
@@ -630,7 +630,7 @@
     font-size: 16px;
     opacity: 0.6;
 }
-@media only screen and (max-width: 800px) { 
+@media only screen and (max-width: 850px) { 
 .feedbacks h2 {
     font-size: 18px;
     padding: 10px 0;
@@ -733,7 +733,7 @@
     align-items: center;
     justify-content: center;
 }
-@media only screen and (max-width: 800px) { 
+@media only screen and (max-width: 850px) { 
 .jpart {
     margin: 20px 0;
     padding: 15px;
