@@ -59,6 +59,11 @@ header a {
     margin: 0 10px;
     color: rgb(49, 52, 53);
     text-decoration: none;
+    transition: transform 0.6s ease-in-out;
+}
+header a:hover {
+    color: rgb(248, 169, 17);
+    transform: scale(1.1);
 }
 .main_head button {
     background: rgb(248, 169, 17);

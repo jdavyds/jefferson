@@ -118,11 +118,17 @@
     margin: 50px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    position: relative;
 }
 .partners figure img {
     width: 120px;
     height: 100%;
     object-fit: contain;
+    transition: transform 0.6s ease-in-out;
+}
+.partners figure img:hover {
+    transform: scale(2);
+    z-index: 111111;
 }
 .about {
     display: flex;
@@ -288,6 +294,10 @@
     margin: 10px;
     padding: 15px;
     line-height: 1.6;
+    transition: transform 0.6s ease-in-out;
+}
+.expertise div nav:hover {
+    transform: scale(1.05);
 }
 .expertise div nav figure {
     height: 60px;
@@ -486,6 +496,10 @@
     width: 48%;
     height: 250px;
     object-fit: cover;
+    transition: transform 0.6s ease-in-out;
+}
+.success .projMain img:hover {
+    transform: scale(1.05);
 }
 .resHide, .resShow {
     display: none;
@@ -581,6 +595,10 @@
     line-height: 1.6;
     display: flex;
     flex-direction: column;
+    transition: transform 0.6s ease-in-out;
+}
+.feedback nav:hover {
+    transform: scale(1.05);
 }
 .feedback nav div {
     display: flex;

@@ -53,6 +53,10 @@
     margin: 10px 0;
     text-decoration: none;
     color: rgba(87, 83, 83, 1);
+    transition: color 0.3s ease-in-out;
+}
+.footer a:hover {
+    color: rgba(248, 169, 17, 1);
 }
 .footer section {
     display: flex;
