@@ -1,10 +1,9 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import style from './../styles/service.module.css'
 import Footer from './Footer'
 import Header from './Header'
 import arrleft from './../assets/arrow-left.png'
 import arrright from './../assets/arrow-right.png'
-import { useState } from 'react'
 import { useParams } from 'react-router-dom'
 import { Details } from './ServiceDetails'
 export default function Service() {

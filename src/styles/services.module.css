@@ -120,12 +120,16 @@
     color: rgb(49, 52, 53);
 }
 .services nav button:hover {
-    background: rgb(248, 169, 17);
+    background-color: rgb(49, 52, 53);
+    color: white;
     border: none;
 }
 .services nav button img {
     margin: 0 10px;
     height: 16px;
+}
+.services nav button:hover img {
+  background-color: white;
 }
 .subscribe {
     display: flex;

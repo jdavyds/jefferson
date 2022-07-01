@@ -1,0 +1,266 @@
+.hero {
+  padding: 30px 0;
+  height: auto;
+  border-radius: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.hero h3 {
+  color: rgba(248, 169, 17, 1);
+  font-size: 22px;
+  font-weight: 400;
+  margin: 10px 0;
+}
+.hero h1 {
+  font-size: 55px;
+  line-height: 1.5;
+  text-align: center;
+  margin: 10px 0;
+}
+.hero p {
+  line-height: 1.5;
+  font-size: 18px;
+  margin: 10px 0;
+  text-align: center;
+}
+.hero label {
+  margin: 50px 0;
+  height: 50px;
+  width: 35%;
+  display: flex;
+  background: rgb(238, 239, 247);
+  border-radius: 10px 0 0 10px;
+}
+.hero input {
+  width: 75%;
+  height: 50px;
+  background: inherit;
+  border-radius: 10px 0 0 10px;
+  border: none;
+  padding: 0 20px;
+  font-size: 16px;
+}
+.hero button {
+  background: rgba(248, 169, 17, 1);
+  color: white;
+  border-radius: 10px;
+  border: none;
+  width: 25%;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.brands {
+  padding: 0 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.brands small {
+  opacity: 0.4;
+  font-size: 16px;
+}
+.brands figure {
+  width: 100%;
+  margin: 30px 0;
+  padding-bottom: 50px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  box-shadow: 0 10px 10px -10px #ccc7c7;
+}
+.brands figure img {
+  width: auto;
+  height: auto;
+}
+.sort {
+  display: flex;
+  padding: 0 100px;
+}
+.sort h4 {
+  font-size: 20px;
+}
+.sort h4:last-of-type {
+  margin: 0 10px;
+  opacity: 0.3;
+}
+.deals {
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  justify-content: space-between;
+  padding: 0 100px;
+  margin: 50px 0;
+}
+.deals > nav {
+  margin: 20px 0;
+  padding-bottom: 20px;
+  height: auto;
+  border-radius: 0 0 20px 20px;
+  box-shadow: 0 10px 10px -10px #9c9898;
+  display: flex;
+  flex-direction: column;
+}
+.deals nav:first-of-type,
+.deals nav:nth-of-type(4n) {
+  margin-left: 0;
+}
+.deals nav:nth-of-type(3n) {
+  margin-right: 0;
+}
+.deals nav > img {
+  width: 100%;
+  height: 210px;
+  object-fit: fill;
+}
+.deals nav strong {
+  margin: 15px 5px;
+  color: #313435;
+}
+.deals nav p {
+  margin: 0 5px;
+  color: #313435;
+}
+.deals nav button {
+  text-decoration: none;
+  background: inherit;
+  border-radius: 10px;
+  border: 2px solid;
+  padding: 8px 15px;
+  width: fit-content;
+  margin: 80px auto 10px;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  color: rgb(49, 52, 53);
+}
+.deals nav button:hover {
+  background-color: rgb(49, 52, 53);
+  color: white;
+  border: none;
+}
+.deals nav button img {
+  margin: 0 10px;
+  height: 16px;
+}
+.deals nav button:hover img {
+  background-color: white;
+}
+.pager {
+  margin: 80px 0;
+  padding: 0 100px;
+  display: flex;
+  margin-left: 40%;
+  justify-content: space-between;
+}
+.pager > button {
+  background: rgb(49, 52, 53);
+  color: white;
+  border-radius: 10px;
+  border: none;
+  width: fit-content;
+  padding: 10px 15px;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pager nav {
+  display: flex;
+  align-items: center;
+}
+.pager nav button {
+  height: 30px;
+  width: 30px;
+  margin: 5px;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  color: white;
+  border-radius: 5px;
+  background: rgb(49, 52, 53, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.subscribe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.subscribe h2 {
+  color: rgb(49, 52, 53);
+  font-size: 23px;
+  padding: 10px 0;
+  border-bottom: 3px solid;
+}
+.subscribe p {
+  width: 40%;
+  margin-top: 30px;
+  text-align: center;
+  line-height: 1.6;
+  opacity: 0.6;
+}
+.subscribe label {
+  margin: 50px 0;
+  height: 50px;
+  width: 35%;
+  display: flex;
+}
+.subscribe input {
+  width: 75%;
+  height: 50px;
+  background: rgb(238, 239, 247);
+  border-radius: 10px 0 0 10px;
+  border: none;
+  padding: 0 20px;
+  font-size: 16px;
+}
+.subscribe button {
+  background: rgba(248, 169, 17, 1);
+  color: white;
+  border-radius: 0 10px 10px 0;
+  border: none;
+  width: 25%;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media only screen and (max-width: 850px) {
+  .subscribe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+  }
+  .subscribe h2 {
+    font-size: 18px;
+    padding: 10px 0;
+    border-bottom: 2px solid;
+    width: 60%;
+    line-height: 1.5;
+    text-align: center;
+  }
+  .subscribe p {
+    width: 100%;
+  }
+  .subscribe label {
+    width: 100%;
+  }
+  .subscribe input {
+    width: 100%;
+    font-size: 14px;
+  }
+  .subscribe button {
+    width: fit-content;
+    padding: 0 10px;
+    font-size: 14px;
+  }
+}

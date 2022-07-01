@@ -15,6 +15,10 @@ import Services from './components/Services';
 import Service from './components/Service';
 import Consultation from './components/Consultation';
 import Brands from './components/Brands';
+import Brand from './components/Brand';
+import Deals from './components/Deals';
+import Collections from './components/Collections';
+import Collection from './components/Collection';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
@@ -32,6 +36,10 @@ root.render(
           <Route path="services/:id" element={<Service />} />
           <Route path="request-consultation" element={<Consultation />} />
           <Route path="brands" element={<Brands />} />
+          <Route path="brands/:id" element={<Brand />} />
+          <Route path="deals" element={<Deals />} />
+          <Route path="collections" element={<Collections />} />
+          <Route path="collections/:id" element={<Collection />} />
         </Route>
       </Routes>
     </BrowserRouter>

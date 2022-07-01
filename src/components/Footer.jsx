@@ -34,8 +34,8 @@ export default function Footer() {
           <nav>
             <Link to="/services">Services</Link>
             <Link to="/">Invest in Hospitality</Link>
-            <Link to="/">Collections</Link>
-            <Link to="/">Deals</Link>
+            <Link to="/collections">Collections</Link>
+            <Link to="/deals">Deals</Link>
             <Link to="/">Shop</Link>
             <Link to="/">Download Brochure</Link>
           </nav>

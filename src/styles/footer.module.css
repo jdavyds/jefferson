@@ -54,6 +54,10 @@
     text-decoration: none;
     color: rgba(87, 83, 83, 1);
     transition: color 0.3s ease-in-out;
+    -webkit-transition: color 0.3s ease-in-out;
+    -moz-transition: color 0.3s ease-in-out;
+    -ms-transition: color 0.3s ease-in-out;
+    -o-transition: color 0.3s ease-in-out;
 }
 .footer a:hover {
     color: rgba(248, 169, 17, 1);
