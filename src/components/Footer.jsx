@@ -27,12 +27,12 @@ export default function Footer() {
             <Link to="/about">About</Link>
             <Link to="/team">Team</Link>
             <Link to="/">Culture</Link>
-            <Link to="/">Brands</Link>
-            <Link to="/">Awards</Link>
+            <Link to="/brands">Brands</Link>
+            <Link to="/awards">Awards</Link>
             <Link to="/careers">Career</Link>
           </nav>
           <nav>
-            <Link to="/">Services</Link>
+            <Link to="/services">Services</Link>
             <Link to="/">Invest in Hospitality</Link>
             <Link to="/">Collections</Link>
             <Link to="/">Deals</Link>
@@ -45,7 +45,7 @@ export default function Footer() {
             <Link to="/">Partnership Life</Link>
             <Link to="/">Trainings</Link>
             <Link to="/">Webinar</Link>
-            <Link to="/">Consultation</Link>
+            <Link to="/request-consultation">Consultation</Link>
           </nav>
           <nav>
             <Link to="/">Case Study</Link>
@@ -53,7 +53,7 @@ export default function Footer() {
             <Link to="/">Media/Press</Link>
             <Link to="/">FAQ</Link>
             <Link to="/">Affiliate</Link>
-            <Link to="/">Contact</Link>
+            <Link to="/contact-us">Contact</Link>
           </nav>
         </div>
         <div className={style.footer_contact}>

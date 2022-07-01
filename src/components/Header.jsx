@@ -1,12 +1,12 @@
-import React, {useState} from 'react'
-import style from './../styles/header.module.css'
-import logo from './../assets/Jefferson  logo.png'
-import icon1 from './../assets/hos.png'
+import React, { useState } from "react";
+import style from "./../styles/header.module.css";
+import logo from "./../assets/Jefferson  logo.png";
+import icon1 from "./../assets/hos.png";
 import icon2 from "./../assets/profile.svg";
 import icon3 from "./../assets/profile-circle.svg";
 import { NavLink, Outlet, useNavigate } from "react-router-dom";
-import ham from './../assets/ham.png'
-import cancel from './../assets/cancel.svg'
+import ham from "./../assets/ham.png";
+import cancel from "./../assets/cancel.svg";
 export default function Header() {
   const navigate = useNavigate();
   const [sticky, setSticky] = useState(false);
@@ -52,7 +52,7 @@ export default function Header() {
           <NavLink to="/invest">Invest in Hospitality</NavLink>
           <NavLink to="/collections">Collections</NavLink>
           <NavLink to="/jefferson-life">Jefferson Life</NavLink>
-          <NavLink to="/contact">Contact Us</NavLink>
+          <NavLink to="/contact-us">Contact Us</NavLink>
         </nav>
         <button onClick={() => navigate("/contact")}>
           Request Consultation
@@ -81,8 +81,8 @@ export default function Header() {
           <NavLink to="/invest">Invest in Hospitality</NavLink>
           <NavLink to="/collections">Collections</NavLink>
           <NavLink to="/jefferson-life">Jefferson Life</NavLink>
-          <NavLink to="/contact">Contact Us</NavLink>
-          <button onClick={() => navigate("/contact")}>
+          <NavLink to="/contact-us">Contact Us</NavLink>
+          <button onClick={() => navigate("/request-consultation")}>
             Request Consultation
           </button>
           <div onClick={handleShow}>

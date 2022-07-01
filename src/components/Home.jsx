@@ -25,12 +25,12 @@ import heineken from "./../assets/Heineken-Logo.png";
 import j4 from "./../assets/lifestyle.png";
 import j5 from "./../assets/ukh.png";
 import j6 from "./../assets/hen.png";
+import j11 from "./../assets/jp 1.png";
+import j12 from "./../assets/images (7).png";
 import redson_lounge from "./../assets/Redson Lounge.jpg";
 import fruity from "./../assets/Vita Fruity.jpg";
 import eagle from "./../assets/Eagle Plaza.jpg";
 import rebar from "./../assets/Rebar.jpg";
-import j11 from "./../assets/jp 1.png";
-import j12 from "./../assets/images (7).png";
 import { Link } from "react-router-dom";
 import heavens from "./../assets/Heavens.jpg";
 import playground from "./../assets/Playground.jpg";
@@ -489,7 +489,7 @@ export default function Home() {
           </nav>
         </div>
       </section>
-      <fruity className={style.jpart}>
+      <section className={style.jpart}>
         <div>
           <span></span>
           <img src={j11} alt="" />
@@ -504,7 +504,7 @@ export default function Home() {
           <img src={j5} alt="" />
           <img src={j6} alt="" />
         </div>
-      </fruity>
+      </section>
       <section className={style.subscribe}>
         <h2>SUBSCRIBE TO OUR NEWSLETTER</h2>
         <p>

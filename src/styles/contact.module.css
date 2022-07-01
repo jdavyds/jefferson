@@ -1,0 +1,240 @@
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+.hero h3 {
+    font-size: 20px;
+    font-weight: 400;
+    color: rgba(248, 169, 17, 1);
+}
+.hero h2 {
+    font-size: 45px;
+    margin: 10px 0;    
+}
+.contact {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    padding: 0 100px;
+    margin: 50px 0;
+}
+.contact figure {
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    display: flex;
+    align-items: flex-end;
+}
+.contact figure img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 30px;
+}
+.contact form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 50px;
+    color: rgb(49, 52, 53);
+    border-radius: 0 0 30px 30px;
+    box-shadow: 10px 10px 15px 0 rgba(157, 163, 170, 0.1);
+}
+.contact label {
+    width: 100%;
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+}
+.contact span {
+    margin: 10px 0;
+    font-size: 18px;
+}
+.contact span small {
+    color: red;
+    font-size: 18px;
+}
+.contact input {
+    background: rgb(196, 196, 196, 0.1);
+    color: rgb(49, 52, 53, 0.4);
+    height: 50px;
+    padding: 0 20px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+}
+.contact textarea {
+    background: rgb(196, 196, 196, 0.1);
+    color: rgb(49, 52, 53, 0.4);
+    height: 150px;
+    padding: 20px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+}
+.contact button {
+    background: rgb(248, 169, 17);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    height: 45px;
+    width: fit-content;
+    padding: 0 20px;
+    margin: 20px auto;
+    font-size: 16px;
+}
+.details {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-between;
+    padding: 0 100px;
+    margin: 80px 0;
+}
+.details nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 10px;
+    transition: transform 0.6s ease-in-out;
+}
+.details nav:hover {
+    transform: scale(1.1);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px 0 rgb(189, 186, 186);
+}
+.details nav img {
+    margin: 10px 0;
+}
+.details p {
+    margin: 10px;
+    line-height: 1.5;
+}
+.subscribe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.subscribe h2 {
+    color: rgb(49, 52, 53);
+    font-size: 23px;
+    padding: 10px 0;
+    border-bottom: 3px solid;
+}
+.subscribe p {
+    width: 40%;
+    margin-top: 30px;
+    text-align: center;
+    line-height: 1.6;
+    opacity: 0.6;
+}
+.subscribe label {
+    margin: 50px 0;
+    height: 50px;
+    width: 35%;
+    display: flex;
+}
+.subscribe input {
+    width: 75%;
+    height: 50px;
+    background: rgb(238, 239, 247);
+    border-radius: 10px 0 0 10px;
+    border: none;
+    padding: 0 20px;
+    font-size: 16px;
+}
+.subscribe button {
+    background: rgba(248, 169, 17, 1);
+    color: white;
+    border-radius: 0 10px 10px 0;
+    border: none;
+    width: 25%;
+    font-size: 16px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media only screen and (max-width: 850px) { 
+.hero {
+    align-items: center;
+    margin-top: 20px;
+    padding: 0 15px;
+}
+.hero h3 {
+    font-size: 18px;
+    text-align: center;
+}
+.hero h2 {
+    font-size: 25px;
+}
+.contact {
+    display: flex;
+    padding: 0;
+    margin: 10px 0;
+}
+.contact figure {
+    display: none;
+}
+.contact form {
+    padding: 10px 15px;
+    border-radius: 0;
+    box-shadow: unset;
+}
+.contact span {
+    font-size: 16px;
+}
+.contact input {
+    height: 40px;
+    padding: 0 10px;
+    font-size: 14px;
+}
+.contact textarea {
+    height: 130px;
+    padding: 10px;
+    font-size: 14px;
+}
+.contact button {
+    height: 40px;
+}
+.details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 15px;
+    margin: 30px 0;
+}
+.details p {
+    font-size: 16px;
+}
+.subscribe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+}
+.subscribe h2 {
+    font-size: 18px;
+    padding: 10px 0;
+    border-bottom: 2px solid;
+    width: 60%;
+    line-height: 1.5;
+    text-align: center;
+}
+.subscribe p {
+    width: 100%;
+}
+.subscribe label {
+    width: 100%;
+}
+.subscribe input {
+    width: 100%;
+    font-size: 14px;
+}
+.subscribe button {
+    width: fit-content;
+    padding: 0 10px;
+    font-size: 14px; 
+}
+}

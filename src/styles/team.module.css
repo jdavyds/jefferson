@@ -72,6 +72,13 @@
     padding: 10px 0;
     border-bottom: 3px solid;
 }
+.subscribe p {
+    width: 40%;
+    margin-top: 30px;
+    text-align: center;
+    line-height: 1.6;
+    opacity: 0.6;
+}
 .subscribe label {
     margin: 50px 0;
     height: 50px;
@@ -97,4 +104,77 @@
     display: flex;
     align-items: center;
     justify-content: center;
+}
+@media only screen and (max-width: 850px) { 
+.hero {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 15px;
+}
+.hero h3 {
+    margin: 0;
+    font-size: 18px;
+}
+.hero h2 {
+    width: 100%;
+    font-size: 25px;
+    line-height: 1.5;
+    margin: 10px 0;
+}
+.hero p {
+    width: 100%;
+    font-size: 18px;
+    line-height: 1.5;
+}
+.team {
+    padding: 0 15px;
+    display: flex;
+    flex-direction: column;
+}
+.team nav {
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+}
+.team nav img {
+    height: calc(100vw - 30px);
+    object-fit: contain;
+}
+.contact {
+    padding: 30px 15px;
+}
+.contact h2 {
+    color: rgb(49, 52, 53);
+    font-size: 20px;
+    margin: 10px 0;
+}
+.subscribe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+}
+.subscribe h2 {
+    font-size: 18px;
+    padding: 10px 0;
+    border-bottom: 2px solid;
+    width: 60%;
+    line-height: 1.5;
+    text-align: center;
+}
+.subscribe p {
+    width: 100%;
+}
+.subscribe label {
+    width: 100%;
+}
+.subscribe input {
+    width: 100%;
+    font-size: 14px;
+}
+.subscribe button {
+    width: fit-content;
+    padding: 0 10px;
+    font-size: 14px; 
+}
 }

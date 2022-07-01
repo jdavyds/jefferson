@@ -1,0 +1,100 @@
+import React, { useEffect } from 'react'
+import style from './../styles/service.module.css'
+import Footer from './Footer'
+import Header from './Header'
+import arrleft from './../assets/arrow-left.png'
+import arrright from './../assets/arrow-right.png'
+import { useState } from 'react'
+import { useParams } from 'react-router-dom'
+import { Details } from './ServiceDetails'
+export default function Service() {
+    let params = useParams();
+    const [info, setInfo] = useState({});
+    const [current, setCurrent] = useState(false);
+    const [trans, setTrans] = useState(0);
+    function handleNext() {
+        if(trans === 0) {
+            setTrans(-100)
+            setCurrent(true)
+        }
+        if(trans === -100) {
+            return
+        }
+    }
+    function handleBack() {
+        if (trans === 0) {
+            return
+        }
+        if (trans === -100) {
+            setTrans(0)
+            setCurrent(false)
+        }
+    }
+    let transform_style = {
+        transform: "translateX(" + trans + "% )",
+    };
+    useEffect(() => {
+        Details.forEach((detail) => {
+          if (detail.title === params.id) {
+            setInfo(detail);
+            console.log(detail);
+          }
+        });
+    }, [params.id])
+  return (
+    <div>
+      <Header />
+      <section className={style.hero}>
+        <h3>Our Services</h3>
+        <h2>{info.title}</h2>
+      </section>
+      <section className={style.gallery}>
+        <div>
+          <figure style={transform_style}>
+            <img src={info.gallery1} alt="" />
+            <img src={info.gallery2} alt="" />
+            <img src={info.gallery3} alt="" />
+            <img src={info.gallery4} alt="" />
+          </figure>
+          <figure style={transform_style}>
+            <img src={info.gallery5} alt="" />
+            <img src={info.gallery6} alt="" />
+            <img src={info.gallery7} alt="" />
+            <img src={info.gallery8} alt="" />
+          </figure>
+        </div>
+        <nav>
+          <button onClick={handleBack} className={current ? '' : style.true}>
+            <img src={arrleft} alt="" />
+          </button>
+          <button onClick={handleNext} className={current ? style.true : ""}>
+            {" "}
+            <img src={arrright} alt="" />
+          </button>
+        </nav>
+      </section>
+      <section className={style.details}>
+        <h3>WHAT WE DO</h3>
+        <div>
+          <h4>Our Process</h4>
+          {info.process}
+          <h4>Projects You Could Work On</h4>
+          {info.description}
+        </div>
+        <button>Contact Our Team</button>
+      </section>
+      <section className={style.subscribe}>
+        <h2>SUBSCRIBE TO OUR NEWSLETTER</h2>
+        <p>
+          Our focus is on mid to upscale hotels, restaurants,nightlife venues,
+          and resorts intelligently designed with user experience
+        </p>
+        <label>
+          <input type="email" placeholder="Enter your Email Address" />
+          <button>Subscribe</button>
+        </label>
+      </section>
+      <Footer />
+    </div>
+  );
+}

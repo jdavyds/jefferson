@@ -220,6 +220,10 @@ export default function Team() {
       </section>
       <section className={style.subscribe}>
         <h2>SUBSCRIBE TO OUR NEWSLETTER</h2>
+        <p>
+          Our focus is on mid to upscale hotels, restaurants,nightlife venues,
+          and resorts intelligently designed with user experience
+        </p>
         <label>
           <input type="email" placeholder="Enter your Email Address" />
           <button>Subscribe</button>

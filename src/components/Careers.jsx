@@ -50,29 +50,31 @@ export default function Careers() {
       <section className={style.pos}>
         <h3>OPEN POSITIONS</h3>
         {openings.map((opening) => {
-            return (
-                <nav>
-                    <div>
-                        <span>{opening.category}</span>
-                        <b>{opening.title}</b>
-                        <small>
-                        <img src={icon1} alt="" />
-                        {opening.location}
-                        <img src={icon2} alt="" />
-                        {opening.type}
-                        </small>
-                    </div>
-                    <button
-                    onClick={() => navigate(`/careers/${opening.title}`)}
-                    >
-                        View Job <img src={icon3} alt="" /></button>
-                </nav>
-            )
-        })
-        }
+          return (
+            <nav>
+              <div>
+                <span>{opening.category}</span>
+                <b>{opening.title}</b>
+                <small>
+                  <img src={icon1} alt="" />
+                  {opening.location}
+                  <img src={icon2} alt="" />
+                  {opening.type}
+                </small>
+              </div>
+              <button onClick={() => navigate(`/careers/${opening.title}`)}>
+                View Job <img src={icon3} alt="" />
+              </button>
+            </nav>
+          );
+        })}
       </section>
       <section className={style.subscribe}>
         <h2>SUBSCRIBE TO OUR NEWSLETTER</h2>
+        <p>
+          Our focus is on mid to upscale hotels, restaurants,nightlife venues,
+          and resorts intelligently designed with user experience
+        </p>
         <label>
           <input type="email" placeholder="Enter your Email Address" />
           <button>Subscribe</button>

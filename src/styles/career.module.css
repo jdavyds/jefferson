@@ -120,6 +120,13 @@
     padding: 10px 0;
     border-bottom: 3px solid;
 }
+.subscribe p {
+    width: 40%;
+    margin-top: 30px;
+    text-align: center;
+    line-height: 1.6;
+    opacity: 0.6;
+}
 .subscribe label {
     margin: 50px 0;
     height: 50px;
@@ -145,4 +152,117 @@
     display: flex;
     align-items: center;
     justify-content: center;
+}
+@media only screen and (max-width: 850px) { 
+.hero {
+    margin: 0;
+    padding: 20px 15px;
+    height: 90vh;
+    border-radius: 0;
+    justify-content: unset;
+    background-position:
+    bottom 10px right 50%;
+    background-image: url(./../assets/rescarherobg.png);
+    background-size: auto;
+    background-repeat: no-repeat;
+}
+.hero h3 {
+    font-size: 20px;
+}
+.hero h1 {
+    font-size: 30px;
+    word-spacing: 0;
+    line-height: 1.5;
+    margin: 10px 0;
+}
+.hero p {
+    line-height: 1.5;
+    font-size: 16px;
+    text-align: center;
+}
+.role {
+    width: 100%;
+    padding: 0 15px;
+    margin: 20px 0;
+    flex-direction: column;
+    justify-content: unset;
+}
+.role div {
+    display: flex;
+    flex-direction: column;
+}
+.role div span {
+    flex-direction: column;
+    justify-content: unset;
+    align-items: flex-start;
+    line-height: 1.5;
+}
+.role div i {
+    font-size: 14px;
+}
+.role div span h3 {
+    font-size: 18px;
+    margin: 0;
+}
+.role div small {
+    font-size: 12px;
+}
+.role div small img {
+    height: 12px;
+    width: 12px;
+    margin: 0 3px;
+}
+.role button {
+    height: 40px;
+    font-size: 14px;
+    margin: 10px 0;
+}
+.abt_role {
+    width: 100%;
+    margin: 0;
+    padding: 0 15px;
+}
+.abt_role h4 {
+    margin: 10px 0;
+}
+.abt_role p {
+    margin: 0;
+    line-height: 1.8;
+}
+.apply {
+    margin: 40px 0;
+}
+.apply button {
+    height: 40px;
+    font-size: 14px;
+}
+.subscribe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+}
+.subscribe h2 {
+    font-size: 18px;
+    padding: 10px 0;
+    border-bottom: 2px solid;
+    width: 60%;
+    line-height: 1.5;
+    text-align: center;
+}
+.subscribe p {
+    width: 100%;
+}
+.subscribe label {
+    width: 100%;
+}
+.subscribe input {
+    width: 100%;
+    font-size: 14px;
+}
+.subscribe button {
+    width: fit-content;
+    padding: 0 10px;
+    font-size: 14px; 
+}
 }

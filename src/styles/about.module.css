@@ -47,35 +47,47 @@
     border: none;
     outline: none;
 }
-.vision {
+.vision, .culture {
     display: flex;
     flex-direction: column;
-    padding: 50px 100px;
-    background-image: url(./../assets/visionbg.png);
-    background-position: top 50% right 15%;
-    background-size: 350px;
-    background-repeat: no-repeat;
+    justify-content: center;
+    padding: 0 100px;
+    margin: 70px 0;
+    position: relative;
 }
-.vision h3 {
-    margin-top: 50px;
+.vision figure, .culture figure {
+    position: absolute;
+    right: 100px;
+    height: 100%;
+    width: fit-content;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.vision figure img, .culture figure img {
+    height: 90%;
+    width: auto;
+    object-fit: cover;
+}
+.vision h3, .culture h3 {
     font-size: 20px;
     font-weight: 400;
     color: rgba(248, 169, 17, 1);
 }
-.vision h2 {
+.vision h2, .culture h2 {
     width: 55%;
-    font-size: 40px;
-    line-height: 60px;
+    font-size: 35px;
+    line-height: 50px;
     margin: 20px 0;
     
 }
-.vision p {
-    width: 50%;
+.vision p, .culture p {
+    width: 55%;
     font-size: 20px;
-    line-height: 40px;
+    line-height: 35px;
     margin: 10px 0;
 }
-.vision button {
+.vision button, .culture button {
     background: rgb(248, 169, 17);
     color: white;
     border: none;
@@ -89,29 +101,40 @@
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    padding: 50px 100px;
-    background-image: url(./../assets/identitybg.png);
-    background-position: top 50% left 100px;
-    background-size: 350px;
-    background-repeat: no-repeat;
+    padding: 0 100px;
+    margin: 70px 0;
+    position: relative;
+}
+.identity figure {
+    position: absolute;
+    left: 100px;
+    height: 100%;
+    width: fit-content;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.identity figure img {
+    height: 90%;
+    width: auto;
+    object-fit: cover;
 }
 .identity h3 {
     width: 55%;
-    margin-top: 50px;
     font-size: 20px;
     font-weight: 400;
     color: rgba(248, 169, 17, 1);
 }
 .identity h2 {
     width: 55%;
-    font-size: 40px;
-    line-height: 60px;
+    font-size: 35px;
+    line-height: 50px;
     margin: 20px 0;
 }
 .identity p {
     width: 55%;
     font-size: 20px;
-    line-height: 40px;
+    line-height: 35px;
     margin: 10px 0;
 }
 .identity button {
@@ -124,43 +147,94 @@
     margin: 20px auto 20px 45%;
     font-size: 16px;
 }
-.culture {
-    display: flex;
-    flex-direction: column;
-    padding: 50px 100px;
-    background-image: url(./../assets/culturebg.png);
-    background-position: top 50% right 15%;
-    background-size: 350px;
-    background-repeat: no-repeat;
+@media only screen and (max-width: 850px) { 
+.hero {
+    margin: 0;
+    height: 110vh;
+    padding: 30px 15px;
+    border-radius: 0;
+    background-position:
+    top 50px right 45px,
+    bottom 40% left 20px,
+    bottom 50% right 35px,
+    bottom 10px right 50%;
+    background-size: 25px, 25px, 25px, 80vw;
 }
-.culture h3 {
-    margin-top: 50px;
-    font-size: 20px;
-    font-weight: 400;
-    color: rgba(248, 169, 17, 1);
-}
-.culture h2 {
-    width: 55%;
-    font-size: 40px;
-    line-height: 60px;
+.hero h1 {
+    color: white;
+    font-size: 30px;
     margin: 20px 0;
-    
 }
-.culture p {
-    width: 50%;
+.hero div {
+    margin: 30px 0;
+}
+.vision, .culture {
+    padding: 0 15px;
+}
+.vision figure, .culture figure {
+    margin: 10px 0;
+    position: unset;
+    right: unset;
+    height: calc(100vw - 30px);
+    width: 100%;
+    justify-content: center;
+}
+.vision figure img, .culture figure img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+.vision h3, .culture h3 {
+    font-size: 18px;
+}
+.vision h2, .culture h2 {
+    width: 100%;
     font-size: 20px;
-    line-height: 40px;
+    line-height: 1.5;
     margin: 10px 0;
 }
-.culture button {
-    background: rgb(248, 169, 17);
-    color: white;
-    border: none;
-    height: 45px;
-    width: fit-content;
-    padding: 0 15px;
-    margin: 20px 0;
+.vision p, .culture p {
+    width: 100%;
     font-size: 16px;
+    line-height: 1.5;
+}
+.vision button, .culture button {
+    margin: 20px auto;
+}
+.identity {
+    align-items: center;
+    padding: 0 15px;
+}
+.identity figure {
+    position: unset;
+    left: unset;
+    height: calc(100vw - 30px);
+    width: 100%;
+    display: flex;
+}
+.identity figure img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+.identity h3 {
+    width: 100%;
+    font-size: 18px;
+}
+.identity h2 {
+    width: 100%;
+    font-size: 20px;
+    line-height: 1.5;
+    margin: 10px 0;
+}
+.identity p {
+    width: 100%;
+    font-size: 16px;
+    line-height: 1.5;
+}
+.identity button {
+    margin: 20px auto;
+}
 }
 .values {
     display: flex;
@@ -215,6 +289,9 @@
     height: 30px;
     width: 30px;
 }
+.values > button {
+    display: none;
+}
 .expertise nav h4 {
     color: rgb(49, 52, 53);
     font-size: 18px;
@@ -224,6 +301,43 @@
     margin: 10px 0;
     font-size: 16px;
     opacity: 0.6;
+}
+@media only screen and (max-width: 850px) { 
+.values {
+    flex-direction: column;
+    padding: 0 15px;
+}
+.values div:first-of-type {
+    width: 100%;
+}
+.values div:first-of-type h3 {
+    font-size: 18px;
+}
+.values div:first-of-type h2 {
+    font-size: 20px;
+    line-height: 1.5;
+    margin: 10px 0;
+}
+.values div:first-of-type button {
+    display: none;
+}
+.values > button {
+    display: block;
+    background: rgb(248, 169, 17);
+    color: white;
+    border: none;
+    height: 45px;
+    width: fit-content;
+    padding: 0 15px;
+    margin: 20px auto;
+    font-size: 16px;
+}
+.value {
+    width: 100%;
+    padding: 25px 0;
+    display: flex;
+    flex-direction: column;
+}
 }
 .feedbacks {
     display: flex;
@@ -275,6 +389,46 @@
     font-size: 16px;
     opacity: 0.6;
 }
+@media only screen and (max-width: 850px) { 
+.feedbacks {
+    margin: 30px 0;
+}
+.feedbacks h2 {
+    font-size: 20px;
+}
+.feedback {
+    padding: 0 15px;
+    display: flex;
+    flex-direction: column;
+}
+.feedback nav {
+    margin: 10px 0;
+}
+.feedback nav div {
+    display: flex;
+    margin: 10px 0;
+}
+.feedback nav div span {
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+    line-height: 1.7;
+}
+.feedback nav div span b {
+    opacity: 0.6;
+}
+.feedback span small {
+    opacity: 0.3;
+}
+.feedback span img {
+    height: 20px;
+    width: fit-content;
+}
+.feedback nav p {
+    font-size: 16px;
+    opacity: 0.6;
+}   
+}
 .subscribe {
     display: flex;
     flex-direction: column;
@@ -285,6 +439,13 @@
     font-size: 23px;
     padding: 10px 0;
     border-bottom: 3px solid;
+}
+.subscribe p {
+    width: 40%;
+    margin-top: 30px;
+    text-align: center;
+    line-height: 1.6;
+    opacity: 0.6;
 }
 .subscribe label {
     margin: 50px 0;
@@ -311,4 +472,35 @@
     display: flex;
     align-items: center;
     justify-content: center;
+}
+@media only screen and (max-width: 850px) { 
+.subscribe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+}
+.subscribe h2 {
+    font-size: 18px;
+    padding: 10px 0;
+    border-bottom: 2px solid;
+    width: 60%;
+    line-height: 1.5;
+    text-align: center;
+}
+.subscribe p {
+    width: 100%;
+}
+.subscribe label {
+    width: 100%;
+}
+.subscribe input {
+    width: 100%;
+    font-size: 14px;
+}
+.subscribe button {
+    width: fit-content;
+    padding: 0 10px;
+    font-size: 14px; 
+}
 }

@@ -1,4 +1,4 @@
-import React from 'react'
+ import React from 'react'
 import Footer from './Footer'
 import Header from './Header'
 import stars from "./../assets/stars.png";
@@ -7,6 +7,9 @@ import vid from "./../assets/Group 2.png";
 import icon6 from "./../assets/icon6.png";
 import icon7 from "./../assets/icon7.png";
 import icon8 from "./../assets/icon8.png";
+import vision from './../assets/visionbg.png'
+import identity from "./../assets/identitybg.png";
+import culture from "./../assets/culturebg.png";
 import style from './../styles/about.module.css'
 export default function About() {
   return (
@@ -14,7 +17,9 @@ export default function About() {
       <Header />
       <section className={style.hero}>
         <h4>About Jefferson Hospitality</h4>
-        <h1>An innovative, energetic, <br /> boutique hospitality <br /> company.</h1>
+        <h1>
+          An innovative, energetic, <br /> boutique hospitality <br /> company.
+        </h1>
         <div>
           <img src={vid} alt="" />
           <p>
@@ -36,6 +41,9 @@ export default function About() {
           and service categories in the investment, management and development
           in the region of operations.
         </p>
+        <figure>
+          <img src={vision} alt="" />
+        </figure>
         <button>Contact our Team</button>
       </section>
       <section className={style.identity}>
@@ -49,6 +57,9 @@ export default function About() {
           Brushstrokes stylizing this act is symbolically incorporated into our
           corporate logo and captures the fundamental essence of hospitality.
         </p>
+        <figure>
+          <img src={identity} alt="" />
+        </figure>
         <button>Contact our Team</button>
       </section>
       <section className={style.culture}>
@@ -61,6 +72,9 @@ export default function About() {
           inspire doers and dreamers because we understand that the growth of
           our company is driven by the growth of our individual team members.
         </p>
+        <figure>
+          <img src={culture} alt="" />
+        </figure>
         <button>Contact our Team</button>
       </section>
       <section className={style.values}>
@@ -105,6 +119,7 @@ export default function About() {
             </p>
           </nav>
         </div>
+        <button>Contact our Team</button>
       </section>
       <section className={style.feedbacks}>
         <h2>WHAT OUR CLIENTS HAS TO SAY</h2>
@@ -197,6 +212,10 @@ export default function About() {
       </section>
       <section className={style.subscribe}>
         <h2>SUBSCRIBE TO OUR NEWSLETTER</h2>
+        <p>
+          Our focus is on mid to upscale hotels, restaurants,nightlife venues,
+          and resorts intelligently designed with user experience
+        </p>
         <label>
           <input type="email" placeholder="Enter your Email Address" />
           <button>Subscribe</button>

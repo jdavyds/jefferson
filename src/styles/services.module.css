@@ -1,0 +1,283 @@
+.hero {
+    padding: 30px 100px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.hero h3 {
+    margin-top: 50px;
+    font-size: 20px;
+    font-weight: 400;
+    color: rgba(248, 169, 17, 1);
+}
+.hero h2 {
+    font-size: 45px;
+    line-height: 60px;
+    margin: 15px 0;
+}
+.hero p {
+    font-size: 20px;
+    line-height: 40px;
+    margin: 10px 0;
+}
+.hero div button {
+    background: rgb(248, 169, 17);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    height: 45px;
+    width: fit-content;
+    padding: 0 15px;
+    font-size: 16px;
+}
+.hero figure {
+    display: flex;
+    justify-content: flex-end;
+}
+.hero figure img {
+    height: auto;
+    width: 90%;
+    object-fit: cover;
+}
+.jpart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px 0;
+    padding: 0 100px;
+}
+.jpart div:first-of-type {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.jpart div:first-of-type span {
+    height: 1px;
+    width: 100%;
+    background: black;
+}
+.jpart div:first-of-type img {
+    height: auto;
+    width: auto;
+    margin: 0 30px;
+}
+.jpart div:last-of-type {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
+    align-items: center;
+    margin: 0;
+    padding-bottom: 10px;
+    max-width: 100vw;
+    overflow: hidden;
+    width: 100%;
+    border-bottom: 1px solid black;
+}
+.jpart div:last-of-type img {
+    margin: 0 10px;
+}
+.services {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: space-between;
+    padding: 0 100px;
+    margin: 100px 0;
+}
+.services nav {
+    margin: 15px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.services nav:first-of-type, .services nav:nth-of-type(4n + 1) {
+    margin-left: 0;
+}
+.services nav:nth-of-type(4n) {
+    margin-right: 0;
+}
+.services nav > img {
+    width: 100%;
+    height: 210px;
+    object-fit: fill;
+}
+.services nav strong {
+    margin: 15px 0;
+    color: #313435;
+}
+.services nav p {
+    color: #313435;
+}
+.services nav button {
+    text-decoration: none;
+    background: inherit;
+    border-radius: 10px;
+    border: 2px solid;
+    padding: 8px 15px;
+    width: fit-content;
+    margin: 10px 0;
+    font-size: 18px; 
+    display: flex;
+    align-items: center;
+    color: rgb(49, 52, 53);
+}
+.services nav button:hover {
+    background: rgb(248, 169, 17);
+    border: none;
+}
+.services nav button img {
+    margin: 0 10px;
+    height: 16px;
+}
+.subscribe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.subscribe h2 {
+    color: rgb(49, 52, 53);
+    font-size: 23px;
+    padding: 10px 0;
+    border-bottom: 3px solid;
+}
+.subscribe p {
+    width: 40%;
+    margin-top: 30px;
+    text-align: center;
+    line-height: 1.6;
+    opacity: 0.6;
+}
+.subscribe label {
+    margin: 50px 0;
+    height: 50px;
+    width: 35%;
+    display: flex;
+}
+.subscribe input {
+    width: 75%;
+    height: 50px;
+    background: rgb(238, 239, 247);
+    border-radius: 10px 0 0 10px;
+    border: none;
+    padding: 0 20px;
+    font-size: 16px;
+}
+.subscribe button {
+    background: rgba(248, 169, 17, 1);
+    color: white;
+    border-radius: 0 10px 10px 0;
+    border: none;
+    width: 25%;
+    font-size: 16px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media only screen and (max-width: 850px) { 
+.hero {
+    padding: 40px 15px;
+    display: flex;
+    flex-direction: column;
+}
+.hero h3 {
+    margin-top: 0;
+    font-size: 18px;
+}
+.hero h2 {
+    font-size: 25px;
+    line-height: 1.5;
+}
+.hero p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+.hero div button {
+    height: 40px;
+    margin: 20px 0;
+    font-size: 14px;
+}
+.hero figure {
+    display: none;
+}
+.jpart {
+    margin: 20px 0;
+    padding: 15px;
+}
+.jpart div:first-of-type {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.jpart div:last-of-type {
+    padding-bottom: 30px;
+    overflow-x: scroll;
+}
+.jpart div:first-of-type img {
+    margin: 0 10px;
+}
+.jpart div:last-of-type {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 0;
+    padding-bottom: 10px;
+    overflow: scroll;
+    width: 100%;
+    border-bottom: 1px solid black;
+}
+.jpart div:last-of-type img {
+    margin: 0 10px;
+}
+.services {
+    display: flex;
+    flex-direction: column;
+    padding: 0 15px;
+    margin: 50px 0;
+}
+.services nav {
+    margin: 15px 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.services nav p {
+    font-size: 16px;
+}
+.services nav button {
+    padding: 8px 15px;
+    margin: 15px 0;
+    font-size: 16px; 
+}
+.services nav button img {
+    margin: 0 7px;
+    height: 14px;
+}
+.subscribe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+}
+.subscribe h2 {
+    font-size: 18px;
+    padding: 10px 0;
+    border-bottom: 2px solid;
+    width: 60%;
+    line-height: 1.5;
+    text-align: center;
+}
+.subscribe p {
+    width: 100%;
+}
+.subscribe label {
+    width: 100%;
+}
+.subscribe input {
+    width: 100%;
+    font-size: 14px;
+}
+.subscribe button {
+    width: fit-content;
+    padding: 0 10px;
+    font-size: 14px; 
+}
+}

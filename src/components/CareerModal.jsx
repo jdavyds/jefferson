@@ -11,33 +11,33 @@ const CareerModal = ({ setShowModal }) => {
         <h2>SUBMIT YOUR APPLICATION</h2>
         <form>
           <label>
-            <span>Full Name</span>
+            <span>Full Name <small>*</small></span>
             <input type="text" />
           </label>
           <label>
-            <span>Email Address</span>
+            <span>Email Address <small>*</small></span>
             <input type="email" name="" id="" />
           </label>
           <label>
-            <span>Phone Number</span>
+            <span>Phone Number <small>*</small></span>
             <input type="tel" />
           </label>
           <label>
-            <span>Resume/CV</span>
+            <span>Resume/CV <small>*</small></span>
             <button className={style.file}>
               Attach Resume/CV
               <input type="file" accept="doc/*" required />
             </button>
           </label>
           <label>
-            <span>Cover Letter</span>
+            <span>Cover Letter <small>*</small></span>
             <button className={style.file}>
               Attach Cover Letter
               <input type="file" accept="doc/*" required />
             </button>
           </label>
           <label>
-            <span>Additional Information</span>
+            <span>Additional Information <small>*</small></span>
             <textarea></textarea>
           </label>
           <button className={style.apply}>Submit Application</button>

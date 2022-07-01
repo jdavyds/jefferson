@@ -43,3 +43,33 @@
     line-height: 30px;
     padding: 5px 0;
 }
+@media only screen and (max-width: 850px) { 
+.main_container {
+    width: 90%;
+    height: 90%;
+    border-radius: 15px;
+    padding: 15px;
+    overflow-y: scroll;
+}
+.main_container::-webkit-scrollbar {
+    display: none;
+}
+.main_container button {
+    right: 10px;
+    top: 10px;
+}
+.main_container > img {
+    width: 80px;
+    height: 80px;
+} 
+.main_container h3 {
+    font-size: 18px;
+}
+.main_container span {
+    font-size: 15px;
+}
+.main_container p {
+    font-size: 14px;
+    line-height: 1.8;
+}
+}
