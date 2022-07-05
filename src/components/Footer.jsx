@@ -43,7 +43,7 @@ export default function Footer() {
             <Link to="/">Jefferson Life</Link>
             <Link to="/">First Start</Link>
             <Link to="/">Partnership Life</Link>
-            <Link to="/">Trainings</Link>
+            <Link to="/trainings">Trainings</Link>
             <Link to="/">Webinar</Link>
             <Link to="/request-consultation">Consultation</Link>
           </nav>

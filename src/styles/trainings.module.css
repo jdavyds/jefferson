@@ -1,0 +1,150 @@
+.hero {
+  margin: 0 20px;
+  padding: 50px 80px;
+  border-radius: 40px;
+  background-color: rgba(49, 52, 53, 1);
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.hero > div h3 {
+  margin-top: 50px;
+  font-size: 20px;
+  font-weight: 400;
+  color: rgba(248, 169, 17, 1);
+}
+.hero > div h2 {
+  font-size: 45px;
+  line-height: 60px;
+  margin: 15px 0;
+  color: white;
+}
+.hero > div p {
+  font-size: 20px;
+  line-height: 40px;
+  margin: 10px 0;
+  color: white;
+}
+.hero > div nav {
+  display: flex;
+  align-items: center;
+  color: white;
+  text-align: center;
+  margin: 30px 0;
+}
+.hero > div nav img {
+  margin: 0 10px;
+}
+.hero > div nav button {
+  background: rgb(248, 169, 17);
+  color: white;
+  border: none;
+  height: 45px;
+  width: fit-content;
+  padding: 0 15px;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero > div nav button img {
+    width: 20px;
+    height: 20px;
+}
+.hero figure {
+  display: flex;
+  justify-content: space-between;
+}
+.hero figure div {
+  width: 49%;
+  padding: 10px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.hero figure div:first-of-type img {
+  width: auto;
+  height: 420px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+.hero figure div:last-of-type img {
+  width: auto;
+  height: 200px;
+  border-radius: 20px;
+  object-fit: cover;
+}
+.subscribe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.subscribe h2 {
+  color: rgb(49, 52, 53);
+  font-size: 23px;
+  padding: 10px 0;
+  border-bottom: 3px solid;
+}
+.subscribe p {
+  width: 40%;
+  margin-top: 30px;
+  text-align: center;
+  line-height: 1.6;
+  opacity: 0.6;
+}
+.subscribe label {
+  margin: 50px 0;
+  height: 50px;
+  width: 35%;
+  display: flex;
+}
+.subscribe input {
+  width: 75%;
+  height: 50px;
+  background: rgb(238, 239, 247);
+  border-radius: 10px 0 0 10px;
+  border: none;
+  padding: 0 20px;
+  font-size: 16px;
+}
+.subscribe button {
+  background: rgba(248, 169, 17, 1);
+  color: white;
+  border-radius: 0 10px 10px 0;
+  border: none;
+  width: 25%;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media only screen and (max-width: 850px) {
+  .subscribe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+  }
+  .subscribe h2 {
+    font-size: 18px;
+    padding: 10px 0;
+    border-bottom: 2px solid;
+    width: 60%;
+    line-height: 1.5;
+    text-align: center;
+  }
+  .subscribe p {
+    width: 100%;
+  }
+  .subscribe label {
+    width: 100%;
+  }
+  .subscribe input {
+    width: 100%;
+    font-size: 14px;
+  }
+  .subscribe button {
+    width: fit-content;
+    padding: 0 10px;
+    font-size: 14px;
+  }
+}

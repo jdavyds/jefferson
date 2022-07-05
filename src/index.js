@@ -19,10 +19,14 @@ import Brand from './components/Brand';
 import Deals from './components/Deals';
 import Collections from './components/Collections';
 import Collection from './components/Collection';
+import Deal from './components/Deal';
+import Trainings from './components/Trainings';
+import ScrollToTop from './components/Scroll';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
+    <ScrollToTop>
       <Routes>
         <Route path="/" element={<App />}>
           <Route index element={<Home />} />
@@ -38,10 +42,13 @@ root.render(
           <Route path="brands" element={<Brands />} />
           <Route path="brands/:id" element={<Brand />} />
           <Route path="deals" element={<Deals />} />
+          <Route path="deals/:id" element={<Deal />} />
           <Route path="collections" element={<Collections />} />
           <Route path="collections/:id" element={<Collection />} />
+          <Route path="trainings" element={<Trainings />} />
         </Route>
       </Routes>
+    </ScrollToTop>
     </BrowserRouter>
   </React.StrictMode>
 );

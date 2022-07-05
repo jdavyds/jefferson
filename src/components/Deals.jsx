@@ -8,10 +8,10 @@ import soho from "./../assets/soho.png";
 import temple from "./../assets/temple.png";
 import cv from "./../assets/cv.png";
 import holder from './../assets/deals-holder.png'
-import exp from "./../assets/export.png";
 import arrright from "./../assets/arrow-right.png";
 import barr from './../assets/barRight.png'
 import barl from './../assets/barLeft.png'
+import exp from "./../assets/export.png";
 import { useNavigate } from "react-router-dom";
 
 export default function Deals() {
@@ -49,7 +49,7 @@ export default function Deals() {
           <img src={holder} alt="" />
           <strong>Deal Title</strong>
           <p>Deal description</p>
-          <button onClick={() => navigate(`/services/Hotel Consulting`)}>
+          <button onClick={() => navigate(`/deals/deal-title`)}>
             Learn more <img src={exp} alt="" />{" "}
           </button>
         </nav>
@@ -57,7 +57,7 @@ export default function Deals() {
           <img src={holder} alt="" />
           <strong>Deal Title</strong>
           <p>Deal description</p>
-          <button onClick={() => navigate(`/services/Hotel Consulting`)}>
+          <button onClick={() => navigate(`/deals/deal-title`)}>
             Learn more <img src={exp} alt="" />{" "}
           </button>
         </nav>
@@ -65,7 +65,7 @@ export default function Deals() {
           <img src={holder} alt="" />
           <strong>Deal Title</strong>
           <p>Deal description</p>
-          <button onClick={() => navigate(`/services/Hotel Consulting`)}>
+          <button onClick={() => navigate(`/deals/deal-title`)}>
             Learn more <img src={exp} alt="" />{" "}
           </button>
         </nav>
@@ -73,7 +73,7 @@ export default function Deals() {
           <img src={holder} alt="" />
           <strong>Deal Title</strong>
           <p>Deal description</p>
-          <button onClick={() => navigate(`/services/Hotel Consulting`)}>
+          <button onClick={() => navigate(`/deals/deal-title`)}>
             Learn more <img src={exp} alt="" />{" "}
           </button>
         </nav>
@@ -81,7 +81,7 @@ export default function Deals() {
           <img src={holder} alt="" />
           <strong>Deal Title</strong>
           <p>Deal description</p>
-          <button onClick={() => navigate(`/services/Hotel Consulting`)}>
+          <button onClick={() => navigate(`/deals/deal-title`)}>
             Learn more <img src={exp} alt="" />{" "}
           </button>
         </nav>
@@ -89,7 +89,7 @@ export default function Deals() {
           <img src={holder} alt="" />
           <strong>Deal Title</strong>
           <p>Deal description</p>
-          <button onClick={() => navigate(`/services/Hotel Consulting`)}>
+          <button onClick={() => navigate(`/deals/deal-title`)}>
             Learn more <img src={exp} alt="" />{" "}
           </button>
         </nav>

@@ -12,7 +12,6 @@ export default function Brand() {
       BrandDetail.forEach((detail) => {
         if (detail.title === params.id) {
           setInfo(detail);
-          console.log(detail);
         }
       });
     }, [params.id]);
