@@ -50,16 +50,10 @@ export default function Brand() {
       <section className={style.statement}>
         <h3>Our mission, Vision and Culture</h3>
         {info.statement}
-        <button onClick={() => navigate(`/contact-us`)}>
-          Contact Us
-        </button>
+        <button onClick={() => navigate(`/contact-us`)}>Contact Us</button>
       </section>
       <section className={style.subscribe}>
-        <h2>SUBSCRIBE TO OUR NEWSLETTER</h2>
-        <p>
-          Our focus is on mid to upscale hotels, restaurants,nightlife venues,
-          and resorts intelligently designed with user experience
-        </p>
+        <strong>STAY UPDATED</strong>
         <label>
           <input type="email" placeholder="Enter your Email Address" />
           <button>Subscribe</button>

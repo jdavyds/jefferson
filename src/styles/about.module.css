@@ -430,77 +430,67 @@
 }   
 }
 .subscribe {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  padding: 0 100px;
+  margin: 50px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.subscribe h2 {
-    color: rgb(49, 52, 53);
-    font-size: 23px;
-    padding: 10px 0;
-    border-bottom: 3px solid;
-}
-.subscribe p {
-    width: 40%;
-    margin-top: 30px;
-    text-align: center;
-    line-height: 1.6;
-    opacity: 0.6;
+.subscribe strong {
+  font-size: 18px;
+  font-weight: 600;
+  margin-right: 40px;
+  opacity: 0.7;
 }
 .subscribe label {
-    margin: 50px 0;
-    height: 50px;
-    width: 35%;
-    display: flex;
+  height: 50px;
+  width: 35%;
+  display: flex;
 }
 .subscribe input {
-    width: 75%;
-    height: 50px;
-    background: rgb(238, 239, 247);
-    border-radius: 10px 0 0 10px;
-    border: none;
-    padding: 0 20px;
-    font-size: 16px;
+  width: 75%;
+  height: 50px;
+  background: rgb(238, 239, 247);
+  border-radius: 10px 0 0 10px;
+  border: none;
+  padding: 0 20px;
+  font-size: 16px;
 }
 .subscribe button {
-    background: rgba(248, 169, 17, 1);
-    color: white;
-    border-radius: 0 10px 10px 0;
-    border: none;
-    width: 25%;
-    font-size: 16px; 
+  background: rgba(248, 169, 17, 1);
+  color: white;
+  border-radius: 0 10px 10px 0;
+  border: none;
+  width: 25%;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media only screen and (max-width: 850px) {
+  .subscribe {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-}
-@media only screen and (max-width: 850px) { 
-.subscribe {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     padding: 15px;
-}
-.subscribe h2 {
-    font-size: 18px;
-    padding: 10px 0;
-    border-bottom: 2px solid;
-    width: 60%;
-    line-height: 1.5;
+  }
+  .subscribe strong {
+    margin-right: 0;
     text-align: center;
-}
-.subscribe p {
+    font-size: 16px;
+    margin: 10px 0;
+  }
+  .subscribe label {
     width: 100%;
-}
-.subscribe label {
-    width: 100%;
-}
-.subscribe input {
+  }
+  .subscribe input {
     width: 100%;
     font-size: 14px;
-}
-.subscribe button {
+  }
+  .subscribe button {
     width: fit-content;
     padding: 0 10px;
-    font-size: 14px; 
-}
+    font-size: 14px;
+  }
 }

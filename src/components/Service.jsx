@@ -63,7 +63,7 @@ export default function Service() {
           </figure>
         </div>
         <nav>
-          <button onClick={handleBack} className={current ? '' : style.true}>
+          <button onClick={handleBack} className={current ? "" : style.true}>
             <img src={arrleft} alt="" />
           </button>
           <button onClick={handleNext} className={current ? style.true : ""}>
@@ -83,11 +83,7 @@ export default function Service() {
         <button>Contact Our Team</button>
       </section>
       <section className={style.subscribe}>
-        <h2>SUBSCRIBE TO OUR NEWSLETTER</h2>
-        <p>
-          Our focus is on mid to upscale hotels, restaurants,nightlife venues,
-          and resorts intelligently designed with user experience
-        </p>
+        <strong>STAY UPDATED</strong>
         <label>
           <input type="email" placeholder="Enter your Email Address" />
           <button>Subscribe</button>
