@@ -215,8 +215,7 @@ export default function Career() {
             }
         })
     }, [params.id])
-
-
+    
   return (
     <div>
       <Header />

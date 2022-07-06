@@ -21,34 +21,42 @@ import Collections from './components/Collections';
 import Collection from './components/Collection';
 import Deal from './components/Deal';
 import Trainings from './components/Trainings';
+import Training from './components/Training';
 import ScrollToTop from './components/Scroll';
+import PartnershipLife from './components/PartnershipLife';
+import Events from './components/Events';
+import FirstStart from './components/FirstStart';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
-    <ScrollToTop>
-      <Routes>
-        <Route path="/" element={<App />}>
-          <Route index element={<Home />} />
-          <Route path="about" element={<About />} />
-          <Route path="team" element={<Team />} />
-          <Route path="careers" element={<Careers />} />
-          <Route path="careers/:id" element={<Career />} />
-          <Route path="awards" element={<Awards />} />
-          <Route path="contact-us" element={<Contact />} />
-          <Route path="services" element={<Services />} />
-          <Route path="services/:id" element={<Service />} />
-          <Route path="request-consultation" element={<Consultation />} />
-          <Route path="brands" element={<Brands />} />
-          <Route path="brands/:id" element={<Brand />} />
-          <Route path="deals" element={<Deals />} />
-          <Route path="deals/:id" element={<Deal />} />
-          <Route path="collections" element={<Collections />} />
-          <Route path="collections/:id" element={<Collection />} />
-          <Route path="trainings" element={<Trainings />} />
-        </Route>
-      </Routes>
-    </ScrollToTop>
+      <ScrollToTop>
+        <Routes>
+          <Route path="/" element={<App />}>
+            <Route index element={<Home />} />
+            <Route path="about" element={<About />} />
+            <Route path="team" element={<Team />} />
+            <Route path="careers" element={<Careers />} />
+            <Route path="careers/:id" element={<Career />} />
+            <Route path="awards" element={<Awards />} />
+            <Route path="contact-us" element={<Contact />} />
+            <Route path="services" element={<Services />} />
+            <Route path="services/:id" element={<Service />} />
+            <Route path="request-consultation" element={<Consultation />} />
+            <Route path="brands" element={<Brands />} />
+            <Route path="brands/:id" element={<Brand />} />
+            <Route path="deals" element={<Deals />} />
+            <Route path="deals/:id" element={<Deal />} />
+            <Route path="collections" element={<Collections />} />
+            <Route path="collections/:id" element={<Collection />} />
+            <Route path="trainings" element={<Trainings />} />
+            <Route path="trainings/:id" element={<Training />} />
+            <Route path="partnership-life" element={<PartnershipLife />} />
+            <Route path="events" element={<Events />} />
+            <Route path="first-start" element={<FirstStart />} />
+          </Route>
+        </Routes>
+      </ScrollToTop>
     </BrowserRouter>
   </React.StrictMode>
 );

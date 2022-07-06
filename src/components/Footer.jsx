@@ -17,8 +17,8 @@ export default function Footer() {
             <img src={logo} alt="" />
           </Link>
           <p>
-            Our focus is on mid to upscale hotels, restaurants, nightlife venues,
-            and resorts intelligently designed with user experience
+            Our focus is on mid to upscale hotels, restaurants, nightlife
+            venues, and resorts intelligently designed with user experience
           </p>
           <img src={seal} alt="" />
         </div>
@@ -30,6 +30,7 @@ export default function Footer() {
             <Link to="/brands">Brands</Link>
             <Link to="/awards">Awards</Link>
             <Link to="/careers">Career</Link>
+            <Link to="/">CSR/Community</Link>
           </nav>
           <nav>
             <Link to="/services">Services</Link>
@@ -37,12 +38,13 @@ export default function Footer() {
             <Link to="/collections">Collections</Link>
             <Link to="/deals">Deals</Link>
             <Link to="/">Shop</Link>
+            <Link to="/events">Events</Link>
             <Link to="/">Download Brochure</Link>
           </nav>
           <nav>
             <Link to="/">Jefferson Life</Link>
-            <Link to="/">First Start</Link>
-            <Link to="/">Partnership Life</Link>
+            <Link to="/first-start">First Start</Link>
+            <Link to="/partnership-life">Partnership Life</Link>
             <Link to="/trainings">Trainings</Link>
             <Link to="/">Webinar</Link>
             <Link to="/request-consultation">Consultation</Link>
@@ -61,11 +63,12 @@ export default function Footer() {
           <div>
             {" "}
             <p>
-              London Office <br /> Dalton House, <br /> 60 Windsor Road <br /> London,
-              Greater London <br /> SW19 2RR <br /> United Kingdom
+              London Office <br /> Dalton House, <br /> 60 Windsor Road <br />{" "}
+              London, Greater London <br /> SW19 2RR <br /> United Kingdom
             </p>
             <p>
-              Nigeria Office <br /> ARTISAN PLACE <br /> Suite 4, Plot 284, <br />
+              Nigeria Office <br /> ARTISAN PLACE <br /> Suite 4, Plot 284,{" "}
+              <br />
               Cadastral Zone B06 <br /> Mabushi District, Abuja <br /> Nigeria
             </p>
           </div>

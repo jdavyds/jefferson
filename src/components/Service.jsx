@@ -47,7 +47,17 @@ export default function Service() {
         <h3>Our Services</h3>
         <h2>{info.title}</h2>
       </section>
+      <section className={style.details}>
+        <div>
+          <h4>Our Process</h4>
+          {info.process}
+          <h4>Projects You Could Work On</h4>
+          {info.description}
+        </div>
+        <button>Contact Our Team</button>
+      </section>
       <section className={style.gallery}>
+        <h3>WHAT WE DO</h3>
         <div>
           <figure style={transform_style}>
             <img src={info.gallery1} alt="" />
@@ -71,16 +81,6 @@ export default function Service() {
             <img src={arrright} alt="" />
           </button>
         </nav>
-      </section>
-      <section className={style.details}>
-        <h3>WHAT WE DO</h3>
-        <div>
-          <h4>Our Process</h4>
-          {info.process}
-          <h4>Projects You Could Work On</h4>
-          {info.description}
-        </div>
-        <button>Contact Our Team</button>
       </section>
       <section className={style.subscribe}>
         <strong>STAY UPDATED</strong>

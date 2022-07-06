@@ -14,7 +14,7 @@ import exp from "./../assets/export.png";
 import { useNavigate } from "react-router-dom";
 
 export default function Brands() {
-    const navigate = useNavigate()
+  const navigate = useNavigate()
   return (
     <div>
       <Header />
