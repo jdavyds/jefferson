@@ -54,7 +54,6 @@ export default function Service() {
           <h4>Projects You Could Work On</h4>
           {info.description}
         </div>
-        <button>Contact Our Team</button>
       </section>
       <section className={style.gallery}>
         <h3>WHAT WE DO</h3>
@@ -82,6 +81,7 @@ export default function Service() {
           </button>
         </nav>
       </section>
+      <button className={style.btn}>Contact Our Team</button>
       <section className={style.subscribe}>
         <strong>STAY UPDATED</strong>
         <label>

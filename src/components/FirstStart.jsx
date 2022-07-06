@@ -4,6 +4,11 @@ import Footer from "./Footer";
 import Header from "./Header";
 import send from './../assets/card-send.png'
 import holder from './../assets/start-holder.png'
+import illustration1 from './../assets/Illustration 1.png'
+import illustration2 from "./../assets/Illustration 2.png";
+import illustration3 from "./../assets/Illustration 3.png";
+import illustration4 from "./../assets/Illustration 4.png";
+import steps from './../assets/steps.png'
 export default function FirstStart() {
   return (
     <div>
@@ -55,6 +60,34 @@ export default function FirstStart() {
             <img src={holder} alt="" />
           </figure>
         </div>
+      </section>
+      <section className={style.steps}>
+        <h3>FIRST START MEMBERS ENJOY THE FOLLOWING BENEFITS</h3>
+        <nav>
+          <img src={illustration1} alt="" />
+          Free unlimited virtual consultancy
+        </nav>
+        <nav>
+          <img src={illustration2} alt="" />
+          Free priority access to trainings and webinars
+        </nav>
+        <nav>
+          <img src={illustration3} alt="" />
+          Access to special events
+        </nav>
+        <nav>
+          <img src={illustration4} alt="" />
+          Up to 50% discounts from Jefferson <br /> brands and collections and off
+          onsite <br /> or one-on-one consultancy
+        </nav>
+        <label>
+          <button>Join Jefferson Life</button>
+          <span>
+            <img src={send} alt="" />
+            $1000 subscribtion fee
+          </span>
+        </label>
+        <img src={steps} alt="" />
       </section>
       <section className={style.subscribe}>
         <strong>STAY UPDATED</strong>
