@@ -76,8 +76,7 @@
 .steps {
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
-  margin: 50px 0;
+  margin: 100px 0;
   padding: 0 100px;
   position: relative;
 }
@@ -85,14 +84,22 @@
   color: rgb(49, 52, 53);
   font-size: 23px;
   padding: 10px 0;
-  margin: 80px auto;
+  margin: 0 auto 80px;
   border-bottom: 3px solid;
 }
 .steps > img {
-    height: 100vh;
+  height: 80vh;
+  width: fit-content;
+  position: absolute;
+  top: 180px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  -webkit-transform: translate(-50%, 0);
+  -moz-transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
+  -o-transform: translate(-50%, 0);
 }
 .steps nav {
-  background-color: aqua;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -102,7 +109,6 @@
 .steps label {
   display: flex;
   flex-direction: column;
-  background-color: aqua;
   width: fit-content;
 }
 .steps label button {
@@ -113,7 +119,7 @@
   height: 45px;
   width: fit-content;
   padding: 0 25px;
-  margin: 0 auto;
+  margin: 10px auto;
   font-size: 16px;
 }
 .steps label span {
@@ -130,10 +136,10 @@
 .steps nav:first-of-type,
 .steps nav:nth-of-type(3),
 .steps label {
-  margin-left: 50%;
+  margin-left: 52%;
 }
 .steps nav:nth-of-type(2n) {
-  margin: 0 50% 0 auto;
+  margin: 0 52% 0 auto;
 }
 .subscribe {
   padding: 0 100px;

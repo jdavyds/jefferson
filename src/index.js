@@ -26,6 +26,11 @@ import ScrollToTop from './components/Scroll';
 import PartnershipLife from './components/PartnershipLife';
 import Events from './components/Events';
 import FirstStart from './components/FirstStart';
+import Brochure from './components/Brochure';
+import Blogs from './components/Blogs';
+import Blog from './components/Blog';
+import Media from './components/Media';
+import CaseStudy from './components/CaseStudy';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
@@ -54,6 +59,11 @@ root.render(
             <Route path="partnership-life" element={<PartnershipLife />} />
             <Route path="events" element={<Events />} />
             <Route path="first-start" element={<FirstStart />} />
+            <Route path="brochure" element={<Brochure />} />
+            <Route path="insight-blog" element={<Blogs />} />
+            <Route path="insight-blog/:id" element={<Blog />} />
+            <Route path="media-press" element={<Media />} />
+            <Route path="case-study" element={<CaseStudy />} />
           </Route>
         </Routes>
       </ScrollToTop>

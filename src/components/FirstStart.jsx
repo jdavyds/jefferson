@@ -69,7 +69,7 @@ export default function FirstStart() {
         </nav>
         <nav>
           <img src={illustration2} alt="" />
-          Free priority access to trainings and webinars
+          Free priority access to trainings <br /> and webinars
         </nav>
         <nav>
           <img src={illustration3} alt="" />

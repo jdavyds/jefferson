@@ -39,7 +39,7 @@ export default function Footer() {
             <Link to="/deals">Deals</Link>
             <Link to="/">Shop</Link>
             <Link to="/events">Events</Link>
-            <Link to="/">Download Brochure</Link>
+            <Link to="/brochure">Download Brochure</Link>
           </nav>
           <nav>
             <Link to="/">Jefferson Life</Link>
@@ -50,9 +50,9 @@ export default function Footer() {
             <Link to="/request-consultation">Consultation</Link>
           </nav>
           <nav>
-            <Link to="/">Case Study</Link>
-            <Link to="/">Insight Blog</Link>
-            <Link to="/">Media/Press</Link>
+            <Link to="/case-study">Case Study</Link>
+            <Link to="/insight-blog">Insight Blog</Link>
+            <Link to="/media-press">Media/Press</Link>
             <Link to="/">FAQ</Link>
             <Link to="/">Affiliate</Link>
             <Link to="/contact-us">Contact</Link>
