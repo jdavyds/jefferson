@@ -1,37 +1,40 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from './components/Home';
-import About from './components/About';
-import Team from './components/Team';
-import Careers from './components/Careers';
-import Career from './components/Career';
-import Awards from './components/Awards';
-import Contact from './components/Contact';
-import Services from './components/Services';
-import Service from './components/Service';
-import Consultation from './components/Consultation';
-import Brands from './components/Brands';
-import Brand from './components/Brand';
-import Deals from './components/Deals';
-import Collections from './components/Collections';
-import Collection from './components/Collection';
-import Deal from './components/Deal';
-import Trainings from './components/Trainings';
-import Training from './components/Training';
-import ScrollToTop from './components/Scroll';
-import PartnershipLife from './components/PartnershipLife';
-import Events from './components/Events';
-import FirstStart from './components/FirstStart';
-import Brochure from './components/Brochure';
-import Blogs from './components/Blogs';
-import Blog from './components/Blog';
-import Media from './components/Media';
-import CaseStudy from './components/CaseStudy';
-const root = ReactDOM.createRoot(document.getElementById('root'));
+import Home from "./components/pages/Home";
+import About from './components/pages/About';
+import Team from "./components/pages/Team";
+import Careers from "./components/pages/Careers";
+import Career from './components/pages/Career';
+import Awards from "./components/pages/Awards";
+import Contact from "./components/pages/Contact";
+import Services from "./components/pages/Services";
+import Service from "./components/pages/Service";
+import Consultation from "./components/pages/Consultation";
+import Brands from "./components/pages/Brands";
+import Brand from "./components/pages/Brand";
+import Deals from "./components/pages/Deals";
+import Collections from "./components/pages/Collections";
+import Collection from "./components/pages/Collection";
+import Deal from "./components/pages/Deal";
+import Trainings from "./components/pages/Trainings";
+import Training from "./components/pages/Training";
+import ScrollToTop from "./components/subComponents/Scroll";
+import PartnershipLife from "./components/pages/PartnershipLife";
+import Events from './components/pages/Events';
+import FirstStart from "./components/pages/FirstStart";
+import Brochure from "./components/pages/Brochure";
+import Blogs from "./components/pages/Blogs";
+import Blog from "./components/pages/Blog";
+import Media from "./components/pages/Media";
+import CaseStudy from "./components/pages/CaseStudy";
+import Invests from "./components/pages/Invests";
+import Invest from './components/pages/Invest';
+import Csr from "./components/pages/Csr";
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
@@ -64,6 +67,9 @@ root.render(
             <Route path="insight-blog/:id" element={<Blog />} />
             <Route path="media-press" element={<Media />} />
             <Route path="case-study" element={<CaseStudy />} />
+            <Route path="invest-in-hospitality" element={<Invests />} />
+            <Route path="invest-in-hospitality/:id" element={<Invest />} />
+            <Route path="community" element={<Csr />} />
           </Route>
         </Routes>
       </ScrollToTop>
