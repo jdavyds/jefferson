@@ -49,12 +49,12 @@ export default function Header() {
         <nav>
           <NavLink to="/about">About</NavLink>
           <NavLink to="/services">Services</NavLink>
-          <NavLink to="/invest">Invest in Hospitality</NavLink>
+          <NavLink to="/invest-in-hospitality">Invest in Hospitality</NavLink>
           <NavLink to="/collections">Collections</NavLink>
           <NavLink to="/jefferson-life">Jefferson Life</NavLink>
           <NavLink to="/contact-us">Contact Us</NavLink>
         </nav>
-        <button onClick={() => navigate("/contact")}>
+        <button onClick={() => navigate("/contact-us")}>
           Request Consultation
         </button>
 
